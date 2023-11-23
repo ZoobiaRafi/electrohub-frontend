@@ -52,8 +52,10 @@ body {
         font-size: 14px !important;
         font-weight: 600 !important;
         span {
+          margin-left: 0px!important;
           i {
-            font-size: 15px!important;
+          margin-left: -3px!important;
+          font-size: 15px!important;
           }
         }
       }
@@ -193,7 +195,7 @@ body {
       float: left;
       position: relative;
       padding: 0.75rem;
-      width: 130px;
+      // width: 130px;
       text-align: center;
       display: flex;
       align-items: center;
@@ -221,12 +223,12 @@ body {
         font-family: Roboto;
         font-weight: 500;
         span {
-          position: relative;
+          // position: relative;
           i {
             color: var(--primaryOrangeDark);
             font-size: 20px;
-            margin-top: 23px;
-            margin-left: 3px; /* Added margin for spacing between text and icon */
+            margin-top: 28px;
+            margin-left: -8px; /* Added margin for spacing between text and icon */
             // top: -0.25rem; /* Adjusted top position to align with text */
           }
         }
@@ -234,7 +236,7 @@ body {
       }
       &:hover {
         a span i{
-          margin-top: 13px;
+          margin-top: 24px;
           transform: rotate(180deg);
         }
       }
