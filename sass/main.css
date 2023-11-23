@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*------------------ Colors:Start ------------------------*/
 :root {
   /*------------------ Primary Colors ------------------------*/
@@ -49,6 +48,9 @@ body {
 .fixed-nav ul li a {
   font-size: 14px !important;
   font-weight: 600 !important;
+}
+.fixed-nav ul li a span i {
+  font-size: 15px !important;
 }
 .fixed-nav ul li .mega-menu {
   top: 135px !important;
@@ -187,18 +189,6 @@ body {
   justify-content: center;
   transition: all ease 1.5s;
 }
-.nav ul li::after {
-  content: "›";
-  font-size: 30px;
-  transform: rotate(90deg);
-  padding: 0;
-  margin: 4px 0px 4px 12px;
-  color: var(--primaryOrangeDark);
-  font-weight: 600;
-}
-.nav ul li:hover::after {
-  content: "‹";
-}
 .nav ul li a {
   color: var(--darkGrey);
   text-decoration: none;
@@ -211,9 +201,13 @@ body {
 }
 .nav ul li a span i {
   color: var(--primaryOrangeDark);
-  font-size: 9px;
-  margin-left: 5px; /* Added margin for spacing between text and icon */
-  top: -0.25rem; /* Adjusted top position to align with text */
+  font-size: 20px;
+  margin-top: 23px;
+  margin-left: 3px; /* Added margin for spacing between text and icon */
+}
+.nav ul li:hover a span i {
+  margin-top: 13px;
+  transform: rotate(180deg);
 }
 .nav ul li .mega-menu {
   transition: all 0.3s ease-in-out;
@@ -225,7 +219,7 @@ body {
   transform: translateX(0);
   height: auto;
   padding: 1.5rem;
-  top: 240px;
+  top: 230px;
   z-index: 1;
 }
 .nav ul li .mega-menu .mega-menu-items {

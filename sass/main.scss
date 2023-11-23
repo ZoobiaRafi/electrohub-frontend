@@ -51,6 +51,11 @@ body {
       a {
         font-size: 14px !important;
         font-weight: 600 !important;
+        span {
+          i {
+            font-size: 15px!important;
+          }
+        }
       }
       .mega-menu {
         top: 135px !important;
@@ -65,6 +70,7 @@ body {
               text-transform: uppercase;
               font-size: 13px !important;
               font-weight: 300 !important;
+              
             }
           }
         }
@@ -193,20 +199,21 @@ body {
       align-items: center;
       justify-content: center;
       transition: all ease 1.5s;
-      &::after {
-        content: "\0203A";
-        font-size: 30px;
-        transform: rotate(90deg);
-        padding: 0;
-        margin: 4px 0px 4px 12px;
-        color: var(--primaryOrangeDark);
-        font-weight: 600;
-      }
-      &:hover {
-        &::after {
-          content: "\2039";
-        }
-      }
+      // &::after {
+      //   // content: "\0203A";
+      //   content: "";
+      //   font-size: 30px;
+      //   // transform: rotate(180deg);
+      //   padding: 0;
+      //   margin: 4px 0px 4px 12px;
+      //   color: var(--primaryOrangeDark);
+      //   font-weight: 600;
+      // }
+      // &:hover {
+      //   &::after {
+      //     content: "\2039";
+      //   }
+      // }
       a {
         color: var(--darkGrey);
         text-decoration: none;
@@ -217,11 +224,18 @@ body {
           position: relative;
           i {
             color: var(--primaryOrangeDark);
-            font-size: 9px;
-            // top: -1rem;
-            margin-left: 5px; /* Added margin for spacing between text and icon */
-            top: -0.25rem; /* Adjusted top position to align with text */
+            font-size: 20px;
+            margin-top: 23px;
+            margin-left: 3px; /* Added margin for spacing between text and icon */
+            // top: -0.25rem; /* Adjusted top position to align with text */
           }
+        }
+        
+      }
+      &:hover {
+        a span i{
+          margin-top: 13px;
+          transform: rotate(180deg);
         }
       }
       .mega-menu {
@@ -234,7 +248,7 @@ body {
         transform: translateX(0); // Ensure no horizontal translation
         height: auto;
         padding: 1.5rem;
-        top: 240px;
+        top: 230px;
         z-index: 1;
         // right: 0;
         .mega-menu-items {
