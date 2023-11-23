@@ -29,6 +29,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  transition: background-color 0.5s ease; /* Add a transition for background-color */
+
   .header-black {
     height: 75px !important;
     padding-top: 0.75rem !important;
@@ -39,9 +41,13 @@ body {
   width: 100%;
   top: 75px;
   height: 60px;
-  transition: all ease 1s;
+  transition: background-color 0.5s ease; /* Add a transition for background-color */
+
   ul {
     li {
+      &::after {
+        font-size: 20px !important;
+      }
       a {
         font-size: 14px !important;
         font-weight: 600 !important;
@@ -92,7 +98,7 @@ body {
         max-width: 720px;
         margin: 0;
         border: 0;
-        padding-top: 0.75rem;
+        padding-top: 0.5rem;
         float: left;
         &:focus {
           border: 0;
@@ -126,10 +132,10 @@ body {
 .ticker {
   transition: all ease 1s;
   background: var(--headerGray);
-  height: 90px;
+  height: 70px;
   .ticker-item {
     // margin-left: 4rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     border-right: 1px solid #ffffff;
     display: flex;
     align-items: center;
@@ -189,7 +195,7 @@ body {
       transition: all ease 1.5s;
       &::after {
         content: "\0203A";
-        font-size: 20px;
+        font-size: 30px;
         transform: rotate(90deg);
         padding: 0;
         margin: 4px 0px 4px 12px;
@@ -198,7 +204,7 @@ body {
       }
       &:hover {
         &::after {
-          transform: rotate(270deg);
+          content: "\2039";
         }
       }
       a {
@@ -228,8 +234,8 @@ body {
         transform: translateX(0); // Ensure no horizontal translation
         height: auto;
         padding: 1.5rem;
-        top: 250px;
-        z-index: 9999;
+        top: 240px;
+        z-index: 1;
         // right: 0;
         .mega-menu-items {
           padding-bottom: 0.75rem;
