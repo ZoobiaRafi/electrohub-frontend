@@ -9,6 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
     <link rel="stylesheet" href="/sass/main.css">
     <link rel="stylesheet" href="/assets/css/bootstrap-5-3.min.css">
     <!-- <link rel="stylesheet" href="/assets/css/font-awesome-all.min.css"> -->
@@ -57,6 +59,64 @@
             text-decoration: none;
             display: block;
         }
+
+        .best-seller .card1 {
+            background-image: url('assets/images/best-seller/lamps.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: all 0.3s ease-out;
+        }
+
+        .best-seller .card1:hover {
+            transition: all 0.3s ease-out;
+            background-image: url('assets/images/best-seller/lamps-hov.png');
+        }
+
+        .best-seller .card2 {
+            background-image: url('assets/images/best-seller/cctv-banner.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: all 0.3s ease-out;
+        }
+
+        .best-seller .card2:hover {
+            transition: all 0.3s ease-out;
+            background-image: url('assets/images/best-seller/cctv-banner-hov.png');
+        }
+
+        .best-seller .card3 {
+            background-image: url('assets/images/best-seller/vent-banner.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: all 0.3s ease-out;
+        }
+
+        .best-seller .card3:hover {
+            transition: all 0.3s ease-out;
+            background-image: url('assets/images/best-seller/vent-banner-hov.png');
+        }
+
+        .best-seller .card4 {
+            background-image: url('assets/images/best-seller/solar.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: all 0.3s ease-out;
+        }
+
+        .best-seller .card4:hover {
+            /* transition: all 0.4s ease-in-out; */
+            background-image: url('assets/images/best-seller/solar-hov.png');
+        }
+
+        .newsletter .img-row {
+            background-image: url('assets/images/newsletter.png');
+        }
+
+        @media only screen and (max-width: 600px) {
+            .newsletter .img-row {
+                background-image: url('assets/images/newsletter-res.png');
+            }
+        }
     </style>
 </head>
 
@@ -89,7 +149,7 @@
                             Login</a>
                     </div>
                     <div class="user-nav-item">
-                        <a class="btn" href="#"><i class="fa-solid fa-cart-shopping"></i>
+                        <a href="javascript:;" class="btn" href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i>
                             Cart</a>
                     </div>
                 </div>
@@ -114,10 +174,10 @@
                 </div>
                 <div class="col-6">
                     <div class="user-nav">
-                        <div class="user-nav-item">
+                        <!-- <div class="user-nav-item">
                             <a class="btn" href="#"><i class="fa-solid fa-shop"></i>
                                 Store</a>
-                        </div>
+                        </div> -->
                         <div class="user-nav-item">
                             <a class="btn" href="#"><i class="fa-regular fa-user"></i>
                                 Login</a>
@@ -194,7 +254,7 @@
 
     <!-- mobile ticker : Start -->
     <div class="ticker d-block d-md-none">
-        <div id="ticker-carousel" class="carousel slide" data-ride="carousel">
+        <div id="ticker-carousel" class="carousel slide" data-bs-interval="500">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="ticker-item w-100 col-sm-4 col-lg-4 col-md-4">
@@ -246,7 +306,8 @@
     <div id="nav" class="nav d-md-block d-none">
         <div class="container">
             <ul>
-                <li><a class="d-flex align-items-center justify-content-center" href="#">Wiring Accessories <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Wiring Accessories
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                     <div class="mega-menu">
                         <div class="container">
                             <div class="row d-flex align-items-center justify-content-center">
@@ -335,7 +396,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a class="d-flex align-items-center justify-content-center" href="#">Lamps & Lighting <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Lamps & Lighting
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                     <div class="mega-menu">
                         <div class="container">
                             <div class="row d-flex align-items-center justify-content-center">
@@ -424,7 +486,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a class="d-flex align-items-center justify-content-center" href="#">Heating & Ventilation <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Heating & Ventilation
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                     <div class="mega-menu">
                         <div class="container">
                             <div class="row d-flex align-items-center justify-content-center">
@@ -513,7 +576,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a class="d-flex align-items-center justify-content-center" href="#">Fire & Security <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Fire & Security
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                     <div class="mega-menu">
                         <div class="container">
                             <div class="row d-flex align-items-center justify-content-center">
@@ -602,7 +666,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a class="d-flex align-items-center justify-content-center" href="#">Circuit Protection <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Circuit Protection
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                     <div class="mega-menu">
                         <div class="container">
                             <div class="row d-flex align-items-center justify-content-center">
@@ -691,7 +756,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a class="d-flex align-items-center justify-content-center" href="#">Smart Systems <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Smart Systems
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                     <div class="mega-menu">
                         <div class="container">
                             <div class="row d-flex align-items-center justify-content-center">
@@ -780,7 +846,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a class="d-flex align-items-center justify-content-center" href="#">Solar panels & EV <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Solar panels & EV
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                     <div class="mega-menu">
                         <div class="container">
                             <div class="row d-flex align-items-center justify-content-center">
@@ -869,7 +936,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a class="d-flex align-items-center justify-content-center" href="#">Cable Managment <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Cable Managment
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                     <div class="mega-menu">
                         <div class="container">
                             <div class="row d-flex align-items-center justify-content-center">
@@ -958,7 +1026,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a class="d-flex align-items-center justify-content-center" href="#">Hardware & Tools <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Hardware & Tools
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                     <div class="mega-menu">
                         <div class="container">
                             <div class="row d-flex align-items-center justify-content-center">
@@ -1052,8 +1121,2363 @@
     </div>
     <!-- Desktop nav : end -->
 
-    
-    <main></main>
+    <main>
+        <!-- banners desktop section : Start -->
+        <section class="banner d-md-block d-none">
+            <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="/assets/images/home-banner.png" alt="First slide">
+                        <div class="row text">
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col1">
+                                <h3 class="banner-heading-sm">Your Trusted Source for</h3>
+                                <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
+                                <a href="#" class="btn btn-shop">Shop Now</a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col2">
+                                <h4 class="upto">Upto</h4>
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="discount">50</h3>
+                                    </div>
+                                    <div class="col">
+                                        <span class="off">
+                                            <p class="precentage">%</p>
+                                            <p>OFF</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/images/home-banner.png" alt="Second slide">
+                        <div class="row text">
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col1">
+                                <h3 class="banner-heading-sm">Your Trusted Source for</h3>
+                                <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
+                                <a href="#" class="btn btn-shop">Shop Now</a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col2">
+                                <h4 class="upto">Upto</h4>
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="discount">20</h3>
+                                    </div>
+                                    <div class="col">
+                                        <span class="off">
+                                            <p class="precentage">%</p>
+                                            <p>OFF</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/images/home-banne3r.png" alt="Third slide">
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- banners desktop section : end -->
+
+        <!-- banners phone section : Start -->
+        <section class="banner d-block d-md-none">
+            <div id="bannerCarousel1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="/assets/images/home-res-banner.png" alt="First slide">
+                        <div class="text-col w-100">
+                            <h3 class="banner-heading-sm">Your Trusted Source for</h3>
+                            <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="discount">50</h3>
+                                </div>
+                                <div class="col">
+                                    <span class="off">
+                                        <p class="precentage">%</p>
+                                        <p>OFF</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-shop">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/images/home-res-banner.png" alt="First slide">
+                        <div class="text-col w-100">
+                            <h3 class="banner-heading-sm">Your Trusted Source for</h3>
+                            <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="discount">20</h3>
+                                </div>
+                                <div class="col">
+                                    <span class="off">
+                                        <p class="precentage">%</p>
+                                        <p>OFF</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-shop">Shop Now</a>
+                        </div>
+                    </div>
+                    <!-- <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/images/home-res-banner.png" alt="Second slide">
+                        <div class="row text">
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col1">
+                                <h3 class="banner-heading-sm">Your Trusted Source for</h3>
+                                <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col2">
+                                <h4 class="upto">Upto</h4>
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="discount">20</h3>
+                                    </div>
+                                    <div class="col">
+                                        <span class="off">
+                                            <p class="precentage">%</p>
+                                            <p>OFF</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-shop">Shop Now</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- banners phone section : end -->
+
+        <!-- best seller : Start -->
+        <section class="best-seller">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading">Browse Best Seller Product</h3>
+                        <hr class="heading-hr">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <div class="card">
+                            <div class="card1">
+                                <a href="#" class="btn btn-shop-now">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-lg-8">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                <div class="card">
+                                    <div class="card2">
+                                        <a href="#" class="btn btn-shop-now">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-lg-6 col-6">
+                                <div class="card">
+                                    <div class="card3">
+                                        <a href="#" class="btn btn-shop-now">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-lg-6 col-6">
+                                <div class="card">
+                                    <div class="card4">
+                                        <a href="#" class="btn btn-shop-now">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- best seller : End -->
+
+        <!-- categories Desktop : Start -->
+        <section class="categories d-md-block d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="section-heading">Categories</h3>
+                        <hr class="heading-hr">
+                    </div>
+                    <div class="col-6 d-flex align-items-end justify-content-end px-5">
+                        <button class="carousel-control-prev justify-content-start w-auto  px-3" type="button"
+                            data-bs-target="#category-slider" data-bs-slide="prev">
+                            <span class="fas fa-chevron-left text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next justify-content-end w-auto  px-3" type="button"
+                            data-bs-target="#category-slider" data-bs-slide="next">
+                            <span class="fas fa-chevron-right text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="category-slider" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class="row px-3">
+                                <!-- cat 1 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card border-0">
+                                        <div class="circle-outer px-5">
+                                            <div class="circle">
+                                                <img class="img2" src="assets/images/categories/wiring-2.png"
+                                                    alt="wiring-2">
+                                                <img class="img1" src="assets/images/categories/wiring-1.png"
+                                                    alt="wiring-1">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5>Wiring Accessories</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 1 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card border-0">
+                                        <div class="circle-outer px-5">
+                                            <div class="circle">
+                                                <img class="img1" src="assets/images/categories/lights&lamps-1.png"
+                                                    alt="lights&lamps-1">
+                                                <img class="img2" src="assets/images/categories/lights&lamps-2.png"
+                                                    alt="lights&lamps-2">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5>Lamps & Lighting</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 1 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card border-0">
+                                        <div class="circle-outer px-5">
+                                            <div class="circle">
+                                                <img class="img2" src="assets/images/categories/heat&vent-1.png"
+                                                    alt="heat&vent-1">
+                                                <img class="img1" src="assets/images/categories/heat&vent-2.png"
+                                                    alt="heat&vent-2">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5>Heating & Ventilation</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 1 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card border-0">
+                                        <div class="circle-outer px-5">
+                                            <div class="circle">
+                                                <img class="img1" src="assets/images/categories/fire&security-2.png"
+                                                    alt="fire&security-2">
+                                                <img class="img2" src="assets/images/categories/fire&security-1.png"
+                                                    alt="fire&security-1">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5>Fire & Security</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 1 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card border-0">
+                                        <div class="circle-outer px-5">
+                                            <div class="circle">
+                                                <img class="img2" src="assets/images/categories/circuit-2.png"
+                                                    alt="circuit-2">
+                                                <img class="img1" src="assets/images/categories/circuit-1.png"
+                                                    alt="circuit-1">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5>Circuit Protection</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 1 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card border-0">
+                                        <div class="circle-outer px-5">
+                                            <div class="circle">
+                                                <img class="img1" src="assets/images/categories/smart-1.png"
+                                                    alt="smart-1">
+                                                <img class="img2" src="assets/images/categories/smart-2.png"
+                                                    alt="smart-2">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5>Smart System</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row px-3">
+                                <!-- cat 1 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card border-0">
+                                        <div class="circle-outer px-5">
+                                            <div class="circle">
+                                                <img class="img1" src="assets/images/categories/tools-2.png"
+                                                    alt="tools-2">
+                                                <img class="img2" src="assets/images/categories/tools-1.png"
+                                                    alt="tools-1">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5>Tools</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- categories Desktop : End -->
+
+        <!-- categories Mobile : Start -->
+        <section class="categories d-md-none d-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="section-heading">Categories</h3>
+                        <hr class="heading-hr">
+                    </div>
+                    <div class="buttons col-6 ">
+                        <button class="carousel-control-prev justify-content-start w-auto fs-3 px-3" type="button"
+                            data-bs-target="#category-slider-phone" data-bs-slide="prev">
+                            <span class="fas fa-chevron-left text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next justify-content-end w-auto fs-3 px-3" type="button"
+                            data-bs-target="#category-slider-phone" data-bs-slide="next">
+                            <span class="fas fa-chevron-right text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="category-slider-phone" class="carousel slide" data-aos="zoom-in">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class="row px-3">
+                                <!-- cat 1 -->
+                                <div class="col-3">
+                                    <div class="card border-0">
+                                        <div class="circle-outer">
+                                            <div class="circle">
+                                                <img class="img2" src="assets/images/categories/wiring-2.png"
+                                                    alt="wiring-2">
+                                                <img class="img1" src="assets/images/categories/wiring-1.png"
+                                                    alt="wiring-1">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5 class="text-center">Wiring Accessories</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 1 -->
+                                <div class="col-3">
+                                    <div class="card border-0">
+                                        <div class="circle-outer">
+                                            <div class="circle">
+                                                <img class="img1" src="assets/images/categories/lights&lamps-1.png"
+                                                    alt="lights&lamps-1">
+                                                <img class="img2" src="assets/images/categories/lights&lamps-2.png"
+                                                    alt="lights&lamps-2">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5 class="text-center">Lamps & Lighting</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 1 -->
+                                <div class="col-3">
+                                    <div class="card border-0">
+                                        <div class="circle-outer">
+                                            <div class="circle">
+                                                <img class="img2" src="assets/images/categories/heat&vent-1.png"
+                                                    alt="heat&vent-1">
+                                                <img class="img1" src="assets/images/categories/heat&vent-2.png"
+                                                    alt="heat&vent-2">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5 class="text-center">Heating & Ventilation</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 1 -->
+                                <div class="col-3">
+                                    <div class="card border-0">
+                                        <div class="circle-outer">
+                                            <div class="circle">
+                                                <img class="img1" src="assets/images/categories/fire&security-2.png"
+                                                    alt="fire&security-2">
+                                                <img class="img2" src="assets/images/categories/fire&security-1.png"
+                                                    alt="fire&security-1">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5 class="text-center">Fire & Security</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row px-3">
+                                <!-- cat 1 -->
+                                <div class="col-3">
+                                    <div class="card border-0">
+                                        <div class="circle-outer">
+                                            <div class="circle">
+                                                <img class="img2" src="assets/images/categories/circuit-2.png"
+                                                    alt="circuit-2">
+                                                <img class="img1" src="assets/images/categories/circuit-1.png"
+                                                    alt="circuit-1">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5 class="text-center">Circuit Protection</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 1 -->
+                                <div class="col-3">
+                                    <div class="card border-0">
+                                        <div class="circle-outer">
+                                            <div class="circle">
+                                                <img class="img1" src="assets/images/categories/smart-1.png"
+                                                    alt="smart-1">
+                                                <img class="img2" src="assets/images/categories/smart-2.png"
+                                                    alt="smart-2">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5 class="text-center">Smart System</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 1 -->
+                                <div class="col-3">
+                                    <div class="card border-0">
+                                        <div class="circle-outer">
+                                            <div class="circle">
+                                                <img class="img1" src="assets/images/categories/tools-2.png"
+                                                    alt="tools-2">
+                                                <img class="img2" src="assets/images/categories/tools-1.png"
+                                                    alt="tools-1">
+                                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            <h5 class="text-center">Tools</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- categories Mobile : End -->
+
+        <!-- sale : Start -->
+        <section class="sale">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading">Sale is Live Now!</h3>
+                        <hr class="heading-hr">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <div class="card">
+                            <div class="card1" style="background-image: url('assets/images/sale/solar.png');">
+                                <a href="#" class="btn btn-shop-now">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-lg-8">
+                        <div class="card">
+                            <div class="card2" style="background-image: url('assets/images/sale/vents.png');">
+                                <a href="#" class="btn btn-shop-now">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-lg-8">
+                        <div class="card">
+                            <div class="card2" style="background-image: url('assets/images/sale/lamps.png');">
+                                <a href="#" class="btn btn-shop-now">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <div class="card">
+                            <div class="card1" style="background-image: url('assets/images/sale/tools.png');">
+                                <a href="#" class="btn btn-shop-now">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sale : end -->
+
+        <!-- most popular Desktop : Start -->
+        <section class="most-popular d-md-block d-none">
+            <div class="container">
+                <div class="row py-2">
+                    <div class="col-6">
+                        <h3 class="section-heading">Most Popular This Week</h3>
+                        <hr class="heading-hr">
+                    </div>
+                    <div class="col-6 d-flex align-items-end justify-content-end px-5">
+                        <button class="carousel-control-prev justify-content-start w-auto  px-3" type="button"
+                            data-bs-target="#popular-slider" data-bs-slide="prev">
+                            <span class="fas fa-chevron-left text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next justify-content-end w-auto  px-3" type="button"
+                            data-bs-target="#popular-slider" data-bs-slide="next">
+                            <span class="fas fa-chevron-right text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="popular-slider" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class="row px-3">
+                                <!-- cat 1 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/light.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 2 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/led.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 3 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/socket.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 4 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/solar.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 5 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/vent.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 6 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/switch.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row px-3">
+                                <!-- cat 4 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/solar.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 5 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/vent.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 6 -->
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/switch.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- most popular desktop : End -->
+
+        <!-- most popular phone :Start -->
+        <section class="most-popular d-md-none d-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <h3 class="section-heading">Most Popular This Week</h3>
+                        <hr class="heading-hr">
+                    </div>
+                    <div class="buttons col-4 ">
+                        <button class="carousel-control-prev justify-content-start w-auto fs-3 px-3" type="button"
+                            data-bs-target="#popular-slider-phone" data-bs-slide="prev">
+                            <span class="fas fa-chevron-left text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next justify-content-end w-auto fs-3 px-3" type="button"
+                            data-bs-target="#popular-slider-phone" data-bs-slide="next">
+                            <span class="fas fa-chevron-right text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="popular-slider-phone" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class="row">
+                                <!-- cat 1 -->
+                                <div class="col-6">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/light.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-7 rating ">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-5 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 2 -->
+                                <div class="col-6">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/led.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-7 rating ">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-5 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- cat 1 -->
+                                <div class="col-6">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/solar.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-7 rating ">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-5 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 2 -->
+                                <div class="col-6">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/switch.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-7 rating ">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-5 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- cat 1 -->
+                                <div class="col-6">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/socket.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-7 rating ">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-5 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 2 -->
+                                <div class="col-6">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/popular/vent.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-7 rating ">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-5 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- most popular Phone :end -->
+
+        <!-- brands desktop :Start -->
+        <section class="premium-brands d-none d-md-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="section-heading">Browse Premium Brands</h3>
+                        <hr class="heading-hr">
+                    </div>
+                    <div class="col-6 d-flex align-items-end justify-content-end px-5 ">
+                        <button class="carousel-control-prev justify-content-start w-auto fs-3 px-3" type="button"
+                            data-bs-target="#brands-slider" data-bs-slide="prev">
+                            <span class="fas fa-chevron-left text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next justify-content-end w-auto fs-3 px-3" type="button"
+                            data-bs-target="#brands-slider" data-bs-slide="next">
+                            <span class="fas fa-chevron-right text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="brands-slider" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row px-3">
+                                <!-- brand 1 -->
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                    <div class="card card-grey p-1">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="card-title">
+                                                        <h5>Electro Hub Brand 01</h5>
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Lorem ipsum dolor sit amet, con se te tur sadipscing elitr,
+                                                            sed diam nonumy eirmod tempo</p>
+                                                    </div>
+                                                    <div class="button">
+                                                        <a href="#" class="btn btn-shop-now">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/brands.png" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- brand 2 -->
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                    <div class="card card-orange p-1">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="card-title">
+                                                        <h5>Electro Hub Brand 01</h5>
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Lorem ipsum dolor sit amet, con se te tur sadipscing elitr,
+                                                            sed diam nonumy eirmod tempo</p>
+                                                    </div>
+                                                    <div class="button">
+                                                        <a href="#" class="btn btn-shop-now">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/brands.png" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- brand 3 -->
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                    <div class="card card-grey p-1">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="card-title">
+                                                        <h5>Electro Hub Brand 01</h5>
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Lorem ipsum dolor sit amet, con se te tur sadipscing elitr,
+                                                            sed diam nonumy eirmod tempo</p>
+                                                    </div>
+                                                    <div class="button">
+                                                        <a href="#" class="btn btn-shop-now">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/brands.png" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row px-3">
+                                <!-- brand 1 -->
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                    <div class="card card-grey p-1">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="card-title">
+                                                        <h5>Electro Hub Brand 01</h5>
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Lorem ipsum dolor sit amet, con se te tur sadipscing elitr,
+                                                            sed diam nonumy eirmod tempo</p>
+                                                    </div>
+                                                    <div class="button">
+                                                        <a href="#" class="btn btn-shop-now">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/brands.png" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- brand 2 -->
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                    <div class="card card-orange p-1">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="card-title">
+                                                        <h5>Electro Hub Brand 01</h5>
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Lorem ipsum dolor sit amet, con se te tur sadipscing elitr,
+                                                            sed diam nonumy eirmod tempo</p>
+                                                    </div>
+                                                    <div class="button">
+                                                        <a href="#" class="btn btn-shop-now">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/brands.png" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- brand 3 -->
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                    <div class="card card-grey p-1">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="card-title">
+                                                        <h5>Electro Hub Brand 01</h5>
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Lorem ipsum dolor sit amet, con se te tur sadipscing elitr,
+                                                            sed diam nonumy eirmod tempo</p>
+                                                    </div>
+                                                    <div class="button">
+                                                        <a href="#" class="btn btn-shop-now">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/brands.png" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- brands desktop :end -->
+
+        <!-- brands phone :Start -->
+        <section class="premium-brands d-block d-md-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <h3 class="section-heading">Browse Premium Brands</h3>
+                        <hr class="heading-hr">
+                    </div>
+                    <div class="buttons col-4 ">
+                        <button class="carousel-control-prev justify-content-start w-auto fs-3 px-3" type="button"
+                            data-bs-target="#brands-slider-phone" data-bs-slide="prev">
+                            <span class="fas fa-chevron-left text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next justify-content-end w-auto fs-3 px-3" type="button"
+                            data-bs-target="#brands-slider-phone" data-bs-slide="next">
+                            <span class="fas fa-chevron-right text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="brands-slider-phone" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <!-- brand 1 -->
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="card-title">
+                                                        <h5>Electro Hub Brand 01</h5>
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Lorem ipsum dolor sit amet, con se te tur sadipscing elitr,
+                                                            sed diam nonumy eirmod tempo</p>
+                                                    </div>
+                                                    <div class="button">
+                                                        <a href="#" class="btn btn-shop-now">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/brands.png" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- brand 2 -->
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="card-title">
+                                                        <h5>Electro Hub Brand 01</h5>
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Lorem ipsum dolor sit amet, con se te tur sadipscing elitr,
+                                                            sed diam nonumy eirmod tempo</p>
+                                                    </div>
+                                                    <div class="button">
+                                                        <a href="#" class="btn btn-shop-now">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/brands.png" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- brand 3 -->
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                    <div class="card p-1">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="card-title">
+                                                        <h5>Electro Hub Brand 01</h5>
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Lorem ipsum dolor sit amet, con se te tur sadipscing elitr,
+                                                            sed diam nonumy eirmod tempo</p>
+                                                    </div>
+                                                    <div class="button">
+                                                        <a href="#" class="btn btn-shop-now">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex align-items-center justify-content-center">
+                                                    <img src="assets/images/brands.png" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- brands phone :End -->
+
+        <!-- christmas : start -->
+        <section class="christmas-promotion">
+            <img src="assets/images/christmas-desktop.png" class="img-fluid" alt="christmas-desktop">
+        </section>
+        <!-- christmas : end -->
+
+        <!-- products desktop :Start -->
+        <section class="new-products d-none d-md-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="section-heading">New Products</h3>
+                        <hr class="heading-hr">
+                    </div>
+                    <div class="col-6 d-flex align-items-end justify-content-end px-5 ">
+                        <button class="carousel-control-prev justify-content-start w-auto fs-3 px-3" type="button"
+                            data-bs-target="#products-slider" data-bs-slide="prev">
+                            <span class="fas fa-chevron-left text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next justify-content-end w-auto fs-3 px-3" type="button"
+                            data-bs-target="#products-slider" data-bs-slide="next">
+                            <span class="fas fa-chevron-right text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="products-slider" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img class="" src="/assets/images/new-products/light1.png" alt="light1">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img class="" src="/assets/images/new-products/light2.png" alt="light1">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img class="" src="/assets/images/new-products/light3.png" alt="light1">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img class="" src="/assets/images/new-products/light4.png" alt="light1">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img class="" src="/assets/images/new-products/light1.png" alt="light1">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img class="" src="/assets/images/new-products/light2.png" alt="light1">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img class="" src="/assets/images/new-products/light3.png" alt="light1">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img class="" src="/assets/images/new-products/light4.png" alt="light1">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img class="" src="/assets/images/new-products/light1.png" alt="light1">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img class="" src="/assets/images/new-products/light2.png" alt="light1">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-6 rating">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-6 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- products desktop :End -->
+
+        <!-- products phone :Start -->
+        <section class="new-products d-block d-md-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="section-heading">New Products</h3>
+                        <hr class="heading-hr">
+                    </div>
+                    <div class="col-6 buttons">
+                        <button class="carousel-control-prev justify-content-start w-auto fs-3 px-3" type="button"
+                            data-bs-target="#products-slider-phone" data-bs-slide="prev">
+                            <span class="fas fa-chevron-left text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next justify-content-end w-auto fs-3 px-3" type="button"
+                            data-bs-target="#products-slider-phone" data-bs-slide="next">
+                            <span class="fas fa-chevron-right text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="products-slider-phone" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class="row">
+                                <!-- cat 1 -->
+                                <div class="col-6">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/new-products/light1.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-7 rating ">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-5 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 2 -->
+                                <div class="col-6">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/new-products/light2.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-7 rating ">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-5 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- cat 1 -->
+                                <div class="col-6">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/new-products/light3.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-7 rating ">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-5 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 2 -->
+                                <div class="col-6">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/new-products/light4.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-7 rating ">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-5 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- cat 1 -->
+                                <div class="col-6">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/new-products/light2.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-7 rating ">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-5 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cat 2 -->
+                                <div class="col-6">
+                                    <div class="card p-1">
+                                        <div class="card-top">
+                                            <img src="assets/images/new-products/light3.png" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                IP54 – CTA – White</h5>
+                                            <div class="row">
+                                                <div class="col-7 rating ">
+                                                    <span style="color: #ffc525;">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-5 pricing">
+                                                    <p>
+                                                        £20.29
+                                                    </p>
+                                                </div>
+                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                            </div>
+                                            <div class="row btn-row">
+                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                    to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- products phone :End -->
+
+        <!-- customer review : Start -->
+        <section class="customer-reviews">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h4 class="section-heading1">What Our</h4>
+                        <h3 class="section-heading">Customer Says</h3>
+                        <hr class="heading-hr">
+                    </div>
+                    <div class="col-6 buttons">
+                        <button class="carousel-control-prev justify-content-start w-auto fs-3 px-3" type="button"
+                            data-bs-target="#review-slider" data-bs-slide="prev">
+                            <span class="fas fa-chevron-left text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next justify-content-end w-auto fs-3 px-3" type="button"
+                            data-bs-target="#review-slider" data-bs-slide="next">
+                            <span class="fas fa-chevron-right text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel slide" id="review-slider">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="d-flex">
+                                    <div class="col col1">
+                                        <div class="img-card">
+                                            <div class="img-div">
+                                                <img src="assets/images/avatar.png" alt="review" class="img-fluid">
+                                            </div>
+                                            <div class="name text-center">
+                                                <h5>Williamson</h5>
+                                                <p>Profession will be shown here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col2">
+                                        <div class="review">
+                                            <p class="para-text">
+                                                <span><i class="fa-solid fa-quote-left fa-lg"></i></span>
+                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                                eirmod
+                                                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                voluptua.
+                                                <span><i class="fa-solid fa-quote-right fa-lg"></i></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="card">
+                                <div class="d-flex">
+                                    <div class="col col1">
+                                        <div class="img-card">
+                                            <div class="img-div">
+                                                <img src="assets/images/avatar.png" alt="review" class="img-fluid">
+                                            </div>
+                                            <div class="name text-center">
+                                                <h5>Jackson</h5>
+                                                <p>Profession will be shown here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col2">
+                                        <div class="review">
+                                            <p class="para-text">
+                                                <span><i class="fa-solid fa-quote-left fa-lg"></i></span>
+                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                                eirmod
+                                                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                voluptua.
+                                                <span><i class="fa-solid fa-quote-right fa-lg"></i></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="card">
+                                <div class="d-flex">
+                                    <div class="col col1">
+                                        <div class="img-card">
+                                            <div class="img-div">
+                                                <img src="assets/images/avatar.png" alt="review" class="img-fluid">
+                                            </div>
+                                            <div class="name text-center">
+                                                <h5>Jacob</h5>
+                                                <p>Profession will be shown here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col2">
+                                        <div class="review">
+                                            <p class="para-text">
+                                                <span><i class="fa-solid fa-quote-left fa-lg"></i></span>
+                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                                eirmod
+                                                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                voluptua.
+                                                <span><i class="fa-solid fa-quote-right fa-lg"></i></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- customer review : End -->
+
+        <!-- newsletter : Start -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="row img-row">
+                    <div class="col-12">
+                        <h5 class="subscribe">SUBSCRIBE TO OUR NEWS LETTER</h5>
+                        <p class="para-text">.Lorem impsum.Lorem impsum.Lorem impsum.Lorem impsum</p>
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <span class="input-group-btn">
+                                <button class="btn" type="submit">Subscribe</button>
+                            </span>
+                        </div>
+                        <p class="para-sub-text">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt utLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        </p>
+                    </div>
+                    <div class="col-3"></div>
+
+                </div>
+            </div>
+        </section>
+        <!-- newsletter : End -->
+
+    </main>
+
+    <footer id="footer">
+        <div class="footer-desktop p-5 d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col header-img">
+                        <h3><img alt="EH" src="assets/images/favicon-white.png" /></h3>
+                    </div>
+                    <div class="col header-row">
+                        <h3>Customer Care</h3>
+                        <hr>
+                    </div>
+                    <div class="col header-row">
+                        <h3>Stores</h3>
+                        <hr>
+                    </div>
+                    <div class="col header-row">
+                        <h3>Services</h3>
+                        <hr>
+                    </div>
+                    <div class="col header-row">
+                        <h3>Partner Sites</h3>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col footer-desc">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    </div>
+                    <div class="col footer-links">
+                        <ul class="links">
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Refund Policy</a></li>
+                            <li><a href="">Contact us</a></li>
+                            <li><a href="">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer-links">
+                        <ul class="links">
+                            <li><a href="">Greenford</a></li>
+                            <li><a href="">Second Long Link</a></li>
+                            <li><a href="">Third Link</a></li>
+                            <li><a href="">Fourth long Link</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer-links">
+                        <ul class="links">
+                            <li><a href="">First Link</a></li>
+                            <li><a href="">Second Long Link</a></li>
+                            <li><a href="">Third Link</a></li>
+                            <li><a href="">Fourth long Link</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer-links">
+                        <ul class="links">
+                            <li><a href="">First Link</a></li>
+                            <li><a href="">Second Long Link</a></li>
+                            <li><a href="">Third Link</a></li>
+                            <li><a href="">Fourth long Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col footer-desc pt-3">
+                        <p>Copyright 2020 - All right Reserved</p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-phone d-block d-md-none">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-md-6 px-3">
+                        <h3>
+                            <img src="assets/images/favicon-white.png" alt="logo" class="footer-img">
+                        </h3>
+                        <p class="para-text">
+                            Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt
+                        </p>
+                        <hr>
+                        <div class="email-section">
+                            <p class="title">Email</p>
+                            <hr class="orange">
+                            <p class="detail">info@electricalhub.org</p>
+                        </div>
+                        <hr>
+                        <div class="support-section">
+                            <p class="title">24/7 Support</p>
+                            <hr class="orange">
+                            <p class="detail">0000 000 000</p>
+                        </div>
+                        <hr>
+                        <div class="icons-section">
+                            <p class="title">Stay Connected</p>
+                            <hr class="orange">
+                            <div class="row px-2 d-flex align-items-center justify-content-start">
+                                <div class="icons">
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                                <div class="icons">
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                <div class="icons">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="col-md-6 px-3">
+                        <div class="accordion" id="mobile_footer_menu">
+                            <div id="mobile_footer_menu_1">
+                                <h4 class="accordion-header">
+                                    <a href="#" class="accordion-button shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#mobile_footer_menu_one"
+                                        aria-expanded="true" aria-controls="mobile_footer_menu_one">
+                                        Customer Care
+                                    </a>
+                                </h4>
+                                <div id="mobile_footer_menu_one" class="accordion-collapse collapse show"
+                                    data-bs-parent="#mobile_footer_menu">
+                                    <div class="accordion-body">
+                                        <div class="container p-0">
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Return Policy</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Privacy Policy</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">FAQ's</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="mobile_footer_menu_2">
+                                <h4 class="accordion-header">
+                                    <a href="#" class="accordion-button collapsed shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#mobile_footer_menu_two"
+                                        aria-expanded="false" aria-controls="mobile_footer_menu_two">
+                                        Stores
+                                    </a>
+                                </h4>
+                                <div id="mobile_footer_menu_two" class="accordion-collapse collapse"
+                                    data-bs-parent="#mobile_footer_menu">
+                                    <div class="accordion-body">
+                                        <div class="container p-0">
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Greenford</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Luton</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Richmond</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Dunstable</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="mobile_footer_menu_3">
+                                <h4 class="accordion-header">
+                                    <a href="#" class="accordion-button collapsed shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#mobile_footer_menu_three"
+                                        aria-expanded="false" aria-controls="mobile_footer_menu_one">
+                                        More
+                                    </a>
+                                </h4>
+                                <div id="mobile_footer_menu_three" class="accordion-collapse collapse"
+                                    data-bs-parent="#mobile_footer_menu">
+                                    <div class="accordion-body">
+                                        <div class="container p-0">
+                                            <p class="mobile_footer_text">
+                                                <a href="#">About Us</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">My Account</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Career</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 align-items-center justify-content-center">
+                    <hr class="orange-lg">
+                    <p class="para-text text-center">
+                        Copyright 2023 - All right Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <!-- <script src="/assets/js/main.js"></script> -->
 <script src="/assets/js/bootstrap-5-3.min.js"></script>
@@ -1064,11 +3488,70 @@
 <script>
     // AOS.init();
     $(document).ready(function () {
-        $('.carousel').carousel({
+        $('.ticker-carousel').carousel({
             interval: 500,
             ride: true
         });
+
+        $('#bannerCarousel').carousel({
+            interval: 3000,
+            ride: true
+        });
+
+        $('#bannerCarousel1').carousel({
+            interval: 3000,
+            ride: true
+        });
+
+        $('#category-slider').carousel({
+            interval: 5000,
+            ride: true,
+
+        });
+
+        $('#category-slider-phone').carousel({
+            interval: 3000,
+            ride: true,
+        });
+
+        $('#popular-slider').carousel({
+            interval: 3000,
+            ride: true,
+        });
+
+        $('#popular-slider-phone').carousel({
+            interval: 3000,
+            ride: true,
+        });
+
+        $('#brands-slider').carousel({
+            interval: 3000,
+            ride: true,
+        });
+
+        $('#brands-slider-phone').carousel({
+            interval: 3000,
+            ride: true,
+        }); 
+
+        $(document).on('click', ".cart-icon", function () {
+        if ($(".cart_slider").hasClass("show") === false) {
+            $(".cart_slider").addClass("show");
+            $("body").attr("style", "overflow: hidden;");
+            $(".base-sidebar-background").css("display", "");
+        } else {
+            $(".cart_slider").removeClass("show");
+            $("body").removeAttr("style");
+        }
     });
+    $(document).on('click', ".cart_slide_close, .base-sidebar-background", function () {
+        $(".cart_slider").removeClass("show");
+        $(".base-sidebar-background").css("overflow", "hidden");
+        $("body").removeAttr("style");
+        $(".base-sidebar-background").css("display", "none");
+    });
+    });
+
 </script>
 
 <script>
@@ -1084,7 +3567,6 @@
         } else {
             header.classList.remove("sticky");
             nav.classList.remove("fixed-nav");
-
         }
     }
 

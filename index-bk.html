@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/sass/main.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-5-3.min.css">
+    <!-- <link rel="stylesheet" href="/assets/css/font-awesome-all.min.css"> -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
+        integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" /> -->
+
+
+    <title>The Electro Hub</title>
+
+    <style>
+        /* Mega menu styles */
+        .mega-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            /* Make the mega menu full-width */
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        li:hover .mega-menu {
+            width: 100%;
+            display: block;
+        }
+
+        .mega-menu-content {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            /* Responsive grid */
+            gap: 20px;
+        }
+
+        /* Add styling for mega menu items as needed */
+        .mega-menu-content a {
+            color: var(--darkGrey);
+            text-decoration: none;
+            display: block;
+        }
+
+        .best-seller .card1 {
+            /* background-image: url('assets/images/best-seller/lamps.png'); */
+        }
+
+        .best-seller .card1:hover {
+            /* background-image: url('assets/images/best-seller/lamps-hov.png'); */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- desktop header : Start -->
+    <header id="header-desktop" class="header-desktop d-md-block d-none">
+        <div class="container">
+            <div class="header-black">
+                <div class="logo">
+                    <img src="assets/images/logo-white.png" alt="logo">
+                </div>
+                <div class="searchbar">
+                    <form action="#">
+                        <div class="input-group">
+                            <input id="search-input" type="text" class="form-control px-4 border-0"
+                                placeholder="Search For Products, Brands & Categories" required>
+                            <button id="search-button" type="button" class="btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="user-nav">
+                    <!-- <div class="user-nav-item">
+                        <a class="btn" href="#"><i class="fa-solid fa-shop"></i>
+                            Store</a>
+                    </div> -->
+                    <div class="user-nav-item">
+                        <a class="btn" href="#"><i class="fa-regular fa-user"></i>
+                            Login</a>
+                    </div>
+                    <div class="user-nav-item">
+                        <a class="btn" href="#"><i class="fa-solid fa-cart-shopping"></i>
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- desktop header : End -->
+    <!-- mobile header : Start -->
+    <header id="header-mobile" class="header-mobile d-block d-md-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <!-- menu -->
+                    <a class="btn mobile-nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <div class="col-5">
+                    <div class="logo">
+                        <img src="assets/images/logo-white.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="user-nav">
+                        <!-- <div class="user-nav-item">
+                            <a class="btn" href="#"><i class="fa-solid fa-shop"></i>
+                                Store</a>
+                        </div> -->
+                        <div class="user-nav-item">
+                            <a class="btn" href="#"><i class="fa-regular fa-user"></i>
+                                Login</a>
+                        </div>
+                        <div class="user-nav-item">
+                            <a class="btn" href="#"><i class="fa-solid fa-cart-shopping"></i>
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="searchbar">
+                        <form action="#">
+                            <div class="input-group">
+                                <input id="search-input" type="text" class="form-control px-4 border-0"
+                                    placeholder="Search For Products, Brands & Categories" required>
+                                <button id="search-button" type="button" class="btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- mobile header : end -->
+
+    <!-- Desktop ticker : Start -->
+    <div class="ticker d-md-block d-none">
+        <div class="container">
+            <div class="row">
+                <div class="ticker-item col-sm-4 col-lg-4 col-md-4">
+                    <div class="icon">
+                        <img src="assets/images/ticker-icon1.png" alt="ticker-icon1">
+                    </div>
+                    <div class="para-div">
+                        <p class="ticker-para1">Free 1 hour Click + Collect</p>
+                        <p class="ticker-para2">Restrictions apply</p>
+                    </div>
+                </div>
+                <div class="ticker-item col-sm-4 col-lg-4 col-md-4">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="icon">
+                                <img src="assets/images/ticker-icon2.png" alt="ticker-icon1">
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <p class="ticker-para1">Free delivery on 1000s of products</p>
+                            <p class="ticker-para2">Selected products/locations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticker-item border-0 col-sm-4 col-lg-4 col-md-4">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="icon">
+                                <img src="assets/images/ticker-icon3.png" alt="ticker-icon1">
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <p class="ticker-para">90 day returns policy</p>
+                            <!-- <p class="ticker-para2">Restrictions apply</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Desktop ticker : end -->
+
+    <!-- mobile ticker : Start -->
+    <div class="ticker d-block d-md-none">
+        <div id="ticker-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="ticker-item w-100 col-sm-4 col-lg-4 col-md-4">
+                        <div class="icon">
+                            <img src="assets/images/ticker-icon1.png" alt="ticker-icon1">
+                        </div>
+                        <div class="para-div">
+                            <p class="ticker-para1">Free 1 hour Click + Collect</p>
+                            <p class="ticker-para2">Restrictions apply</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="ticker-item w-100 col-sm-4 col-lg-4 col-md-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="icon">
+                                    <img src="assets/images/ticker-icon2.png" alt="ticker-icon1">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <p class="ticker-para1">Free delivery on 1000s of products</p>
+                                <p class="ticker-para2">Selected products/locations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="ticker-item w-100 col-sm-4 col-lg-4 col-md-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="icon">
+                                    <img src="assets/images/ticker-icon3.png" alt="ticker-icon1">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <p class="ticker-para">90 day returns policy</p>
+                                <!-- <p class="ticker-para2">Restrictions apply</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile ticker : end -->
+
+    <!-- Desktop nav : Start -->
+    <div id="nav" class="nav d-md-block d-none">
+        <div class="container">
+            <ul>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Wiring Accessories
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Lamps & Lighting
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes1</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Heating & Ventilation
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes2</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Fire & Security
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes3</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Circuit Protection
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes4</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Smart Systems
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes5</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Solar panels & EV
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes6</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Cable Managment
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes7</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Hardware & Tools
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes8</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Desktop nav : end -->
+
+    <main>
+        <!-- banners section : Start -->
+        <section class="banner d-md-block d-none">
+            <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="/assets/images/home-banner.png" alt="First slide">
+                        <div class="row text">
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col1">
+                                <h3 class="banner-heading-sm">Your Trusted Source for</h3>
+                                <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
+                                <a href="#" class="btn btn-shop">Shop Now</a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col2">
+                                <h4 class="upto">Upto</h4>
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="discount">50</h3>
+                                    </div>
+                                    <div class="col">
+                                        <span class="off">
+                                            <p class="precentage">%</p>
+                                            <p>OFF</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/images/home-banner.png" alt="Second slide">
+                        <div class="row text">
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col1">
+                                <h3 class="banner-heading-sm">Your Trusted Source for</h3>
+                                <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
+                                <a href="#" class="btn btn-shop">Shop Now</a>
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col2">
+                                <h4 class="upto">Upto</h4>
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="discount">20</h3>
+                                    </div>
+                                    <div class="col">
+                                        <span class="off">
+                                            <p class="precentage">%</p>
+                                            <p>OFF</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/images/home-banne3r.png" alt="Third slide">
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- banners section : end -->
+
+        <!-- banners section : Start -->
+        <section class="banner d-block d-md-none">
+            <div id="bannerCarousel1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="/assets/images/home-res-banner.png" alt="First slide">
+                        <div class="row text">
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col1">
+                                <h3 class="banner-heading-sm">Your Trusted Source for</h3>
+                                <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col2">
+                                <h4 class="upto">Upto</h4>
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="discount">50</h3>
+                                    </div>
+                                    <div class="col">
+                                        <span class="off">
+                                            <p class="precentage">%</p>
+                                            <p>OFF</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-shop">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/images/home-res-banner.png" alt="Second slide">
+                        <div class="row text">
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col1">
+                                <h3 class="banner-heading-sm">Your Trusted Source for</h3>
+                                <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-sm-6 text-col2">
+                                <h4 class="upto">Upto</h4>
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="discount">20</h3>
+                                    </div>
+                                    <div class="col">
+                                        <span class="off">
+                                            <p class="precentage">%</p>
+                                            <p>OFF</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-shop">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banners section : end -->
+
+        <!-- best seller : Start -->
+        <section class="best-seller">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading">Browse Best Seller Product</h3>
+                        <hr class="heading-hr">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <div class="card">
+                            <div class="card1"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-lg-8">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-lg-12">
+                                <div class="card">
+                                    <div class="card2"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-lg-6">
+                                <div class="card">
+                                    <div class="card3"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-lg-6">
+                                <div class="card">
+                                    <div class="card4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- best seller : End -->
+
+        <!-- categories : Start -->
+        <section class="categories">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="section-heading">Categories</h3>
+                        <hr class="heading-hr">
+                    </div>
+                    <div class="col-6 d-flex align-items-end justify-content-end px-5">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="category-slider" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row px-5 overflow-x-auto flex-nowrap text-nowrap justify-content-start">
+                                    <div class="col-2">
+                                        <div class="slider-item">
+                                            <div class="circle-outer">
+                                                <div class="circle">
+                                                    <img class="img2" src="assets/images/categories/wiring-2.png"
+                                                        alt="wiring-2">
+                                                    <img class="img1" src="assets/images/categories/wiring-1.png"
+                                                        alt="wiring-1">
+                                                </div>
+                                            </div>
+                                            <div class="category-title">
+                                                <h5>Wiring Accessories</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="slider-item">
+                                            <div class="circle-outer">
+                                                <div class="circle">
+                                                    <img class="img1" src="assets/images/categories/lights&lamps-1.png"
+                                                        alt="lights&lamps-1">
+                                                    <img class="img2" src="assets/images/categories/lights&lamps-2.png"
+                                                        alt="lights&lamps-2">
+                                                </div>
+                                            </div>
+                                            <div class="category-title">
+                                                <h5>Lamps & Lighting</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="slider-item">
+                                            <div class="circle-outer">
+                                                <div class="circle">
+                                                    <img class="img2" src="assets/images/categories/heat&vent-1.png"
+                                                        alt="heat&vent-1">
+                                                    <img class="img1" src="assets/images/categories/heat&vent-2.png"
+                                                        alt="heat&vent-2">
+                                                </div>
+                                            </div>
+                                            <div class="category-title">
+                                                <h5>Heating & Ventilation</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="slider-item">
+                                            <div class="circle-outer">
+                                                <div class="circle">
+                                                    <img class="img2" src="assets/images/categories/fire&security-1.png"
+                                                        alt="fire&security-1">
+                                                    <img class="img1" src="assets/images/categories/fire&security-2.png"
+                                                        alt="fire&security-2">
+                                                </div>
+                                            </div>
+                                            <div class="category-title">
+                                                <h5>Fire & Security</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="slider-item">
+                                            <div class="circle-outer">
+                                                <div class="circle">
+                                                    <img class="img2" src="assets/images/categories/circuit-1.png"
+                                                        alt="circuit-1">
+                                                    <img class="img1" src="assets/images/categories/circuit-2.png"
+                                                        alt="circuit-2">
+                                                </div>
+                                            </div>
+                                            <div class="category-title">
+                                                <h5>Circuit Protection</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="slider-item">
+                                            <div class="circle-outer">
+                                                <div class="circle">
+                                                    <img class="img2" src="assets/images/categories/smart-1.png"
+                                                        alt="smart-1">
+                                                    <img class="img1" src="assets/images/categories/smart-2.png"
+                                                        alt="smart-2">
+                                                </div>
+                                            </div>
+                                            <div class="category-title">
+                                                <h5>Smart Systems</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row px-5">
+                                    <div class="col-2">
+                                        <div class="slider-item">
+                                            <div class="circle-outer">
+                                                <div class="circle">
+                                                    <img class="img2" src="assets/images/categories/tools-1.png"
+                                                        alt="tools-1">
+                                                    <img class="img1" src="assets/images/categories/tools-2.png"
+                                                        alt="tools-2">
+                                                </div>
+                                            </div>
+                                            <div class="category-title">
+                                                <h5>Tools</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#category-slider" role="button" data-slide="prev">
+                            <span><i class="fa-solid fa-angle-left"></i></span>
+                        </a>
+                        <a class="carousel-control-next" href="#category-slider" role="button" data-slide="next">
+                            <span><i class="fa-solid fa-angle-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- categories : End -->
+    </main>
+
+    <footer id="footer">
+        <div class="footer-top d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col header-img">
+                        <h3><img alt="EH" src="assets/images/favicon-white.png" /></h3>
+                    </div>
+                    <div class="col header-row">
+                        <h3>Customer Care</h3>
+                        <hr>
+                    </div>
+                    <div class="col header-row">
+                        <h3>Stores</h3>
+                        <hr>
+                    </div>
+                    <div class="col header-row">
+                        <h3>Services</h3>
+                        <hr>
+                    </div>
+                    <div class="col header-row">
+                        <h3>Partner Sites</h3>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col footer-desc">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    </div>
+                    <div class="col footer-links">
+                        <ul class="links">
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Refund Policy</a></li>
+                            <li><a href="">Contact us</a></li>
+                            <li><a href="">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer-links">
+                        <ul class="links">
+                            <li><a href="">Greenford</a></li>
+                            <li><a href="">Second Long Link</a></li>
+                            <li><a href="">Third Link</a></li>
+                            <li><a href="">Fourth long Link</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer-links">
+                        <ul class="links">
+                            <li><a href="">First Link</a></li>
+                            <li><a href="">Second Long Link</a></li>
+                            <li><a href="">Third Link</a></li>
+                            <li><a href="">Fourth long Link</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer-links">
+                        <ul class="links">
+                            <li><a href="">First Link</a></li>
+                            <li><a href="">Second Long Link</a></li>
+                            <li><a href="">Third Link</a></li>
+                            <li><a href="">Fourth long Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col footer-desc pt-3">
+                        <p>Copyright 2020 - All right Recived</p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- <script src="/assets/js/main.js"></script> -->
+<script src="/assets/js/bootstrap-5-3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+<script>
+    // AOS.init();
+    $(document).ready(function () {
+        $('.ticker-carousel').carousel({
+            interval: 500,
+            ride: true
+        });
+    });
+    $(document).ready(function () {
+        $('#bannerCarousel').carousel({
+            interval: 3000,
+            ride: true
+        });
+    });
+    $(document).ready(function () {
+        $('#bannerCarousel1').carousel({
+            interval: 3000,
+            ride: true
+        });
+    });
+    $(document).ready(function () {
+        $('#category-slider').carousel({
+            interval: 3000,
+            ride: true
+        });
+    });
+</script>
+
+<script>
+    // Function to handle sticky behavior
+    function stickyHeader(headerId, navId) {
+        var header = document.getElementById(headerId);
+        var nav = document.getElementById(navId);
+        var sticky = header.offsetTop;
+
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+            nav.classList.add("fixed-nav");
+        } else {
+            header.classList.remove("sticky");
+            nav.classList.remove("fixed-nav");
+        }
+    }
+
+    // When the user scrolls the page, execute stickyHeader function
+    window.onscroll = function () {
+        stickyHeader("header-desktop", "nav");
+        stickyHeader("header-mobile"), "nav";
+        // stickyHeader("nav");
+    };
+</script>
+
+</html>

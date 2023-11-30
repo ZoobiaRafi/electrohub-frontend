@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link rel="stylesheet" href="/sass/main.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-5-3.min.css">
+    <!-- <link rel="stylesheet" href="/assets/css/font-awesome-all.min.css"> -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
+        integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" /> -->
+
+
+    <title>The Electro Hub</title>
+
+    <style>
+        /* Mega menu styles */
+        .mega-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            /* Make the mega menu full-width */
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        li:hover .mega-menu {
+            width: 100%;
+            display: block;
+        }
+
+        .mega-menu-content {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            /* Responsive grid */
+            gap: 20px;
+        }
+
+        /* Add styling for mega menu items as needed */
+        .mega-menu-content a {
+            color: var(--darkGrey);
+            text-decoration: none;
+            display: block;
+        }
+
+        @media only screen and (max-width: 600px) {}
+    </style>
+</head>
+
+<body>
+    <!-- desktop header : Start -->
+    <header id="header-desktop" class="header-desktop d-md-block d-none">
+        <div class="container">
+            <div class="header-black">
+                <div class="logo">
+                    <img src="assets/images/logo-white.png" alt="logo">
+                </div>
+                <div class="searchbar">
+                    <form action="#">
+                        <div class="input-group">
+                            <input id="search-input" type="text" class="form-control px-4 border-0"
+                                placeholder="Search For Products, Brands & Categories" required>
+                            <button id="search-button" type="button" class="btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="user-nav">
+                    <!-- <div class="user-nav-item">
+                        <a class="btn" href="#"><i class="fa-solid fa-shop"></i>
+                            Store</a>
+                    </div> -->
+                    <div class="user-nav-item">
+                        <a class="btn" href="#"><i class="fa-regular fa-user"></i>
+                            Login</a>
+                    </div>
+                    <div class="user-nav-item">
+                        <a href="javascript:;" class="btn" href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i>
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- desktop header : End -->
+    <!-- mobile header : Start -->
+    <header id="header-mobile" class="header-mobile d-block d-md-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <!-- menu -->
+                    <a class="btn mobile-nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <div class="col-5">
+                    <div class="logo">
+                        <img src="assets/images/logo-white.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="user-nav">
+                        <!-- <div class="user-nav-item">
+                            <a class="btn" href="#"><i class="fa-solid fa-shop"></i>
+                                Store</a>
+                        </div> -->
+                        <div class="user-nav-item">
+                            <a class="btn" href="#"><i class="fa-regular fa-user"></i>
+                                Login</a>
+                        </div>
+                        <div class="user-nav-item">
+                            <a class="btn" href="#"><i class="fa-solid fa-cart-shopping"></i>
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="searchbar">
+                        <form action="#">
+                            <div class="input-group">
+                                <input id="search-input" type="text" class="form-control px-4 border-0"
+                                    placeholder="Search For Products, Brands & Categories" required>
+                                <button id="search-button" type="button" class="btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- mobile header : end -->
+
+    <!-- Desktop ticker : Start -->
+    <div class="ticker d-md-block d-none">
+        <div class="container">
+            <div class="row">
+                <div class="ticker-item col-sm-4 col-lg-4 col-md-4">
+                    <div class="icon">
+                        <img src="assets/images/ticker-icon1.png" alt="ticker-icon1">
+                    </div>
+                    <div class="para-div">
+                        <p class="ticker-para1">Free 1 hour Click + Collect</p>
+                        <p class="ticker-para2">Restrictions apply</p>
+                    </div>
+                </div>
+                <div class="ticker-item col-sm-4 col-lg-4 col-md-4">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="icon">
+                                <img src="assets/images/ticker-icon2.png" alt="ticker-icon1">
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <p class="ticker-para1">Free delivery on 1000s of products</p>
+                            <p class="ticker-para2">Selected products/locations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticker-item border-0 col-sm-4 col-lg-4 col-md-4">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="icon">
+                                <img src="assets/images/ticker-icon3.png" alt="ticker-icon1">
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <p class="ticker-para">90 day returns policy</p>
+                            <!-- <p class="ticker-para2">Restrictions apply</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Desktop ticker : end -->
+
+    <!-- mobile ticker : Start -->
+    <div class="ticker d-block d-md-none">
+        <div id="ticker-carousel" class="carousel slide" data-bs-interval="500">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="ticker-item w-100 col-sm-4 col-lg-4 col-md-4">
+                        <div class="icon">
+                            <img src="assets/images/ticker-icon1.png" alt="ticker-icon1">
+                        </div>
+                        <div class="para-div">
+                            <p class="ticker-para1">Free 1 hour Click + Collect</p>
+                            <p class="ticker-para2">Restrictions apply</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="ticker-item w-100 col-sm-4 col-lg-4 col-md-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="icon">
+                                    <img src="assets/images/ticker-icon2.png" alt="ticker-icon1">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <p class="ticker-para1">Free delivery on 1000s of products</p>
+                                <p class="ticker-para2">Selected products/locations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="ticker-item w-100 col-sm-4 col-lg-4 col-md-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="icon">
+                                    <img src="assets/images/ticker-icon3.png" alt="ticker-icon1">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <p class="ticker-para">90 day returns policy</p>
+                                <!-- <p class="ticker-para2">Restrictions apply</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile ticker : end -->
+
+    <!-- Desktop nav : Start -->
+    <div id="nav" class="nav d-md-block d-none">
+        <div class="container">
+            <ul>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Wiring Accessories
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Lamps & Lighting
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes1</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Heating & Ventilation
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes2</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Fire & Security
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes3</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Circuit Protection
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes4</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Smart Systems
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes5</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Solar panels & EV
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes6</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Cable Managment
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes7</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Hardware & Tools
+                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <div class="mega-menu">
+                        <div class="container">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Boxes8</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Decorative</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Modular</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Ceiling Accessories</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Moulded</a>
+                                    </p>
+                                    <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Data</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">Metal Clad</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                                <div class="mega-menu-items col-md-3 col-lg-3 col-sm-3">
+                                    <p class="mega-menu-heading">
+                                        <a href="#">INDUSTRIAL PLUGS & SOCKETS</a>
+                                        <hr class="hr-bottom">
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category1</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category2</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category3</a></p>
+                                    <p class="mega-menu-sub-menu"><a href="#">Sub-Category4</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Desktop nav : end -->
+
+    <main>
+
+        <section class="slider">
+            <div class="container">
+                <div id="slider-carousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-lg-6 text-center">
+                                    <!-- <img src="assets/images/brands.png" alt="img"> -->
+                                    <p class="arrow"><i class="fa-solid fa-chevron-up"></i></p>
+                                    <h2>Bridging the Gap in</h2>
+                                    <h3>ELECTRICAL SOLUTIONS</h3>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-lg-6">
+                                    <img src="assets/images/brands.png" alt="img" class="img-fluid w-100">
+                                    <!-- <a class="btn btn-bookAppointment  d-block d-md-none" href="gp-consultation.html#gp-form">Book
+                                    an Appointment</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-lg-6 text-center">
+                                    <!-- <img src="assets/images/brands.png" alt="img"> -->
+                                    <p class="arrow"><i class="fa-solid fa-chevron-up"></i></p>
+                                    <h2>Bridging the Gap in</h2>
+                                    <h3>ELECTRICAL SOLUTIONS</h3>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-lg-6">
+                                    <img src="assets/images/brands.png" alt="img" class="img-fluid w-100">
+                                    <!-- <a class="btn btn-bookAppointment  d-block d-md-none" href="gp-consultation.html#gp-form">Book
+                                    an Appointment</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-list">
+            <div class="container">
+                <div class="row">
+                    <div class=" filters-col col-md-3 col-sm-3 col-lg-3">
+                        <div class="row filters-head">
+                            <div class="col heading">
+                                <h5>Filters</h5>
+                            </div>
+                            <div class="col icon">
+                                <h5><i class="fa-solid fa-sliders"></i></h5>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="row filters-body">
+                            <div class="filter">
+                                <h6><span>Category:</span> Wiring Accessories</h6>
+                                <hr>
+                                <div class="check-list">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cat1">
+                                        <label class="form-check-label" for="cat1">
+                                            Decorative
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                        <label class="form-check-label" for="cat2">
+                                            Moulded
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cat3">
+                                        <label class="form-check-label" for="cat3">
+                                            Metal Clad
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cat4">
+                                        <label class="form-check-label" for="cat4">
+                                            Modular
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cat5">
+                                        <label class="form-check-label" for="cat5">
+                                            Industrial Plug & Sockets
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cat6">
+                                        <label class="form-check-label" for="cat6">
+                                            Boxes
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cat7">
+                                        <label class="form-check-label" for="cat7">
+                                            WeatherProof
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cat8">
+                                        <label class="form-check-label" for="cat8">
+                                            Ceiling Accessories
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter">
+                                <h6>By Brand</h6>
+                                <hr>
+                                <div class="check-list">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cat1">
+                                        <label class="form-check-label" for="cat1">
+                                            Brand 01
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                        <label class="form-check-label" for="cat2">
+                                            Brand 02
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cat3">
+                                        <label class="form-check-label" for="cat3">
+                                            Brand 03
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter">
+                                <h6>Availibity</h6>
+                                <hr>
+                                <div class="check-list">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                        <label class="form-check-label" for="cat2">
+                                            Out Of Stock
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cat3">
+                                        <label class="form-check-label" for="cat3">
+                                            In Stock
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-col col-md-8 col-sm-8 col-lg-8">
+                        <div class="listing-toolbar">
+                            <div class="row p-3">
+                                <div class="col-8"></div>
+                                <div class="col-4 sort border px-3 py-1">
+                                    <span>Sort By:</span>
+                                    <select class="form-select" name="sort" id="sort">
+                                        <option value="Default">Default</option>
+                                        <option value="Ascending">Ascending</option>
+                                        <option value="Descending">Descending</option>
+                                    </select>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="listing">
+                                <div class="row px-3">
+                                    <!-- cat 1 -->
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <div class="card p-1">
+                                            <div class="card-top">
+                                                <img src="assets/images/popular/light.png" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</h5>
+                                                <div class="row">
+                                                    <div class="col-6 rating">
+                                                        <span style="color: #ffc525;">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-6 pricing">
+                                                        <p>
+                                                            £20.29
+                                                        </p>
+                                                    </div>
+                                                    <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                        to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- cat 2 -->
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <div class="card p-1">
+                                            <div class="card-top">
+                                                <img src="assets/images/popular/led.png" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</h5>
+                                                <div class="row">
+                                                    <div class="col-6 rating">
+                                                        <span style="color: #ffc525;">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-6 pricing">
+                                                        <p>
+                                                            £20.29
+                                                        </p>
+                                                    </div>
+                                                    <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                        to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- cat 3 -->
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <div class="card p-1">
+                                            <div class="card-top">
+                                                <img src="assets/images/popular/socket.png" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</h5>
+                                                <div class="row">
+                                                    <div class="col-6 rating">
+                                                        <span style="color: #ffc525;">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-6 pricing">
+                                                        <p>
+                                                            £20.29
+                                                        </p>
+                                                    </div>
+                                                    <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                        to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- cat 4 -->
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <div class="card p-1">
+                                            <div class="card-top">
+                                                <img src="assets/images/popular/solar.png" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</h5>
+                                                <div class="row">
+                                                    <div class="col-6 rating">
+                                                        <span style="color: #ffc525;">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-6 pricing">
+                                                        <p>
+                                                            £20.29
+                                                        </p>
+                                                    </div>
+                                                    <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                        to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- cat 1 -->
+                                     <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <div class="card p-1">
+                                            <div class="card-top">
+                                                <img src="assets/images/popular/light.png" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</h5>
+                                                <div class="row">
+                                                    <div class="col-6 rating">
+                                                        <span style="color: #ffc525;">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-6 pricing">
+                                                        <p>
+                                                            £20.29
+                                                        </p>
+                                                    </div>
+                                                    <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                        to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- cat 2 -->
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <div class="card p-1">
+                                            <div class="card-top">
+                                                <img src="assets/images/popular/led.png" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</h5>
+                                                <div class="row">
+                                                    <div class="col-6 rating">
+                                                        <span style="color: #ffc525;">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-6 pricing">
+                                                        <p>
+                                                            £20.29
+                                                        </p>
+                                                    </div>
+                                                    <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                        to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- cat 3 -->
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <div class="card p-1">
+                                            <div class="card-top">
+                                                <img src="assets/images/popular/socket.png" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</h5>
+                                                <div class="row">
+                                                    <div class="col-6 rating">
+                                                        <span style="color: #ffc525;">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-6 pricing">
+                                                        <p>
+                                                            £20.29
+                                                        </p>
+                                                    </div>
+                                                    <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                        to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- cat 4 -->
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <div class="card p-1">
+                                            <div class="card-top">
+                                                <img src="assets/images/popular/solar.png" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</h5>
+                                                <div class="row">
+                                                    <div class="col-6 rating">
+                                                        <span style="color: #ffc525;">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-6 pricing">
+                                                        <p>
+                                                            £20.29
+                                                        </p>
+                                                    </div>
+                                                    <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                        to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- cat 1 -->
+                                     <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <div class="card p-1">
+                                            <div class="card-top">
+                                                <img src="assets/images/popular/light.png" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</h5>
+                                                <div class="row">
+                                                    <div class="col-6 rating">
+                                                        <span style="color: #ffc525;">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-6 pricing">
+                                                        <p>
+                                                            £20.29
+                                                        </p>
+                                                    </div>
+                                                    <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                        to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- cat 2 -->
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <div class="card p-1">
+                                            <div class="card-top">
+                                                <img src="assets/images/popular/led.png" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</h5>
+                                                <div class="row">
+                                                    <div class="col-6 rating">
+                                                        <span style="color: #ffc525;">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-6 pricing">
+                                                        <p>
+                                                            £20.29
+                                                        </p>
+                                                    </div>
+                                                    <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                        to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- cat 3 -->
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <div class="card p-1">
+                                            <div class="card-top">
+                                                <img src="assets/images/popular/socket.png" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</h5>
+                                                <div class="row">
+                                                    <div class="col-6 rating">
+                                                        <span style="color: #ffc525;">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-6 pricing">
+                                                        <p>
+                                                            £20.29
+                                                        </p>
+                                                    </div>
+                                                    <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                        to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- cat 4 -->
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <div class="card p-1">
+                                            <div class="card-top">
+                                                <img src="assets/images/popular/solar.png" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</h5>
+                                                <div class="row">
+                                                    <div class="col-6 rating">
+                                                        <span style="color: #ffc525;">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-6 pricing">
+                                                        <p>
+                                                            £20.29
+                                                        </p>
+                                                    </div>
+                                                    <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                                </div>
+                                                <div class="row btn-row">
+                                                    <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
+                                                        to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="footer-desktop p-5 d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col header-img">
+                        <h3><img alt="EH" src="assets/images/favicon-white.png" /></h3>
+                    </div>
+                    <div class="col header-row">
+                        <h3>Customer Care</h3>
+                        <hr>
+                    </div>
+                    <div class="col header-row">
+                        <h3>Stores</h3>
+                        <hr>
+                    </div>
+                    <div class="col header-row">
+                        <h3>Services</h3>
+                        <hr>
+                    </div>
+                    <div class="col header-row">
+                        <h3>Partner Sites</h3>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col footer-desc">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    </div>
+                    <div class="col footer-links">
+                        <ul class="links">
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Refund Policy</a></li>
+                            <li><a href="">Contact us</a></li>
+                            <li><a href="">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer-links">
+                        <ul class="links">
+                            <li><a href="">Greenford</a></li>
+                            <li><a href="">Second Long Link</a></li>
+                            <li><a href="">Third Link</a></li>
+                            <li><a href="">Fourth long Link</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer-links">
+                        <ul class="links">
+                            <li><a href="">First Link</a></li>
+                            <li><a href="">Second Long Link</a></li>
+                            <li><a href="">Third Link</a></li>
+                            <li><a href="">Fourth long Link</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer-links">
+                        <ul class="links">
+                            <li><a href="">First Link</a></li>
+                            <li><a href="">Second Long Link</a></li>
+                            <li><a href="">Third Link</a></li>
+                            <li><a href="">Fourth long Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col footer-desc pt-3">
+                        <p>Copyright 2020 - All right Reserved</p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-phone d-block d-md-none">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-md-6 px-3">
+                        <h3>
+                            <img src="assets/images/favicon-white.png" alt="logo" class="footer-img">
+                        </h3>
+                        <p class="para-text">
+                            Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt
+                        </p>
+                        <hr>
+                        <div class="email-section">
+                            <p class="title">Email</p>
+                            <hr class="orange">
+                            <p class="detail">info@electricalhub.org</p>
+                        </div>
+                        <hr>
+                        <div class="support-section">
+                            <p class="title">24/7 Support</p>
+                            <hr class="orange">
+                            <p class="detail">0000 000 000</p>
+                        </div>
+                        <hr>
+                        <div class="icons-section">
+                            <p class="title">Stay Connected</p>
+                            <hr class="orange">
+                            <div class="row px-2 d-flex align-items-center justify-content-start">
+                                <div class="icons">
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                                <div class="icons">
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                <div class="icons">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="col-md-6 px-3">
+                        <div class="accordion" id="mobile_footer_menu">
+                            <div id="mobile_footer_menu_1">
+                                <h4 class="accordion-header">
+                                    <a href="#" class="accordion-button shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#mobile_footer_menu_one"
+                                        aria-expanded="true" aria-controls="mobile_footer_menu_one">
+                                        Customer Care
+                                    </a>
+                                </h4>
+                                <div id="mobile_footer_menu_one" class="accordion-collapse collapse show"
+                                    data-bs-parent="#mobile_footer_menu">
+                                    <div class="accordion-body">
+                                        <div class="container p-0">
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Return Policy</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Privacy Policy</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">FAQ's</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="mobile_footer_menu_2">
+                                <h4 class="accordion-header">
+                                    <a href="#" class="accordion-button collapsed shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#mobile_footer_menu_two"
+                                        aria-expanded="false" aria-controls="mobile_footer_menu_two">
+                                        Stores
+                                    </a>
+                                </h4>
+                                <div id="mobile_footer_menu_two" class="accordion-collapse collapse"
+                                    data-bs-parent="#mobile_footer_menu">
+                                    <div class="accordion-body">
+                                        <div class="container p-0">
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Greenford</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Luton</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Richmond</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Dunstable</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="mobile_footer_menu_3">
+                                <h4 class="accordion-header">
+                                    <a href="#" class="accordion-button collapsed shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#mobile_footer_menu_three"
+                                        aria-expanded="false" aria-controls="mobile_footer_menu_one">
+                                        More
+                                    </a>
+                                </h4>
+                                <div id="mobile_footer_menu_three" class="accordion-collapse collapse"
+                                    data-bs-parent="#mobile_footer_menu">
+                                    <div class="accordion-body">
+                                        <div class="container p-0">
+                                            <p class="mobile_footer_text">
+                                                <a href="#">About Us</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">My Account</a>
+                                            </p>
+                                            <p class="mobile_footer_text">
+                                                <a href="#">Career</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 align-items-center justify-content-center">
+                    <hr class="orange-lg">
+                    <p class="para-text text-center">
+                        Copyright 2023 - All right Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- <script src="/assets/js/main.js"></script> -->
+<script src="/assets/js/bootstrap-5-3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+<script>
+    // AOS.init();
+    $(document).ready(function () {
+        $('.ticker-carousel').carousel({
+            interval: 500,
+            ride: true
+        });
+
+        $('#slider-carousel').carousel({
+            interval: 2000,
+            ride: true
+        });
+    });
+
+</script>
+
+<script>
+    // Function to handle sticky behavior
+    function stickyHeader(headerId, navId) {
+        var header = document.getElementById(headerId);
+        var nav = document.getElementById(navId);
+        var sticky = header.offsetTop;
+
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+            nav.classList.add("fixed-nav");
+        } else {
+            header.classList.remove("sticky");
+            nav.classList.remove("fixed-nav");
+        }
+    }
+
+    // When the user scrolls the page, execute stickyHeader function
+    window.onscroll = function () {
+        stickyHeader("header-desktop", "nav");
+        stickyHeader("header-mobile"), "nav";
+        // stickyHeader("nav");
+    };
+</script>
+
+</html>
