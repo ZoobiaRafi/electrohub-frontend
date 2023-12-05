@@ -60,7 +60,31 @@
             display: block;
         }
 
+        .accordion {
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: 1px solid #ddd;
+            outline: none;
+            transition: 0.4s;
+            box-sizing: border-box;
+        }
 
+        .accordion:hover {
+            background-color: #f5f5f5;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .panel.active {
+            display: block;
+        }
 
         @media only screen and (max-width: 600px) {}
     </style>
@@ -91,7 +115,7 @@
                             Store</a>
                     </div> -->
                     <div class="user-nav-item">
-                        <a class="btn" href="login.html"><i class="fa-regular fa-user"></i>
+                        <a class="btn" href="#"><i class="fa-regular fa-user"></i>
                             Login</a>
                     </div>
                     <div class="user-nav-item">
@@ -109,7 +133,7 @@
             <div class="row">
                 <div class="col-1">
                     <!-- menu -->
-                   <a class="btn mobile-nav-toggle menu-btn" href="javascript:;">
+                    <a class="btn mobile-nav-toggle menu-btn" href="javascript:;">
                         <i class="fa-solid fa-bars"></i>
                     </a>
                 </div>
@@ -125,7 +149,7 @@
                                 Store</a>
                         </div> -->
                         <div class="user-nav-item">
-                            <a class="btn" href="login.html"><i class="fa-regular fa-user"></i>
+                            <a class="btn" href="#"><i class="fa-regular fa-user"></i>
                                 Login</a>
                         </div>
                         <div class="user-nav-item">
@@ -247,6 +271,7 @@
         </div>
     </div>
     <!-- mobile ticker : end -->
+
     <!-- Desktop nav : Start -->
     <div id="nav" class="nav d-md-block d-none">
         <div class="container">
@@ -1085,7 +1110,7 @@
                             <div class="accordion" id="menu_accordion">
                                 <div id="menu_accordion">
                                     <h4 class="accordion-header">
-                                        <a href="#" class="accordion-button single shadow-none" type="button">
+                                        <a href="index.html" class="accordion-button single shadow-none" type="button">
                                             <i style="color: var(--primaryOrangeDark);"
                                                 class="fa-solid fa-house-chimney"></i>&nbsp; Home
                                         </a>
@@ -1107,7 +1132,7 @@
                                                 <div class="check-list">
                                                     <div class="form-check">
                                                         <label class="form-check-label">
-                                                            <a href="#"> Boxes</a>
+                                                            <a href="product-listing.html"> Boxes</a>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -1171,7 +1196,7 @@
                                                 <div class="check-list">
                                                     <div class="form-check">
                                                         <label class="form-check-label">
-                                                            <a href="#"> Boxes</a>
+                                                            <a href="product-listing.html"> Boxes</a>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -1235,7 +1260,7 @@
                                                 <div class="check-list">
                                                     <div class="form-check">
                                                         <label class="form-check-label">
-                                                            <a href="#"> Boxes</a>
+                                                            <a href="product-listing.html"> Boxes</a>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -1299,7 +1324,7 @@
                                                 <div class="check-list">
                                                     <div class="form-check">
                                                         <label class="form-check-label">
-                                                            <a href="#"> Boxes</a>
+                                                            <a href="product-listing.html"> Boxes</a>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -1363,7 +1388,7 @@
                                                 <div class="check-list">
                                                     <div class="form-check">
                                                         <label class="form-check-label">
-                                                            <a href="#"> Boxes</a>
+                                                            <a href="product-listing.html"> Boxes</a>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -1429,1006 +1454,266 @@
     <!-- mobile-menu :end -->
     <main>
 
-        <!-- banners desktop section : Start -->
-        <section class="banner d-md-block d-none">
-            <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="/assets/images/home-banner.png" alt="First slide">
-                        <div class="row text">
-                            <div class="col-md-6 col-lg-6 col-sm-6 text-col1">
-                                <h3 class="banner-heading-sm">Boxes</h3>
-                                <h2 class="banner-heading-lg">Wiring And Accessories</h2>
-                                <!-- <a href="#" class="btn btn-shop">Shop Now</a> -->
-                            </div>
-
-                            <div class="col-md-6 col-lg-6 col-sm-6 text-col2">
-                                <h4 class="upto">Upto</h4>
-                                <div class="row">
-                                    <div class="col">
-                                        <h3 class="discount">50</h3>
-                                    </div>
-                                    <div class="col">
-                                        <span class="off">
-                                            <p class="precentage">%</p>
-                                            <p>OFF</p>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" src="/assets/images/home-banner.png" alt="Second slide">
-                        <div class="row text">
-                            <div class="col-md-6 col-lg-6 col-sm-6 text-col1">
-                                <h3 class="banner-heading-sm">Boxes</h3>
-                                <h2 class="banner-heading-lg">Wiring And Accessories</h2>
-                                <!-- <a href="#" class="btn btn-shop">Shop Now</a> -->
-                            </div>
-
-                            <div class="col-md-6 col-lg-6 col-sm-6 text-col2">
-                                <h4 class="upto">Upto</h4>
-                                <div class="row">
-                                    <div class="col">
-                                        <h3 class="discount">20</h3>
-                                    </div>
-                                    <div class="col">
-                                        <span class="off">
-                                            <p class="precentage">%</p>
-                                            <p>OFF</p>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- banners desktop section : end -->
-
-        <!-- banners phone section : Start -->
-        <section class="banner d-block d-md-none">
-            <div id="bannerCarousel1" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="/assets/images/home-res-banner.png" alt="First slide">
-                        <div class="text-col w-100">
-                            <h3 class="banner-heading-sm">Your Trusted Source for</h3>
-                            <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
-                            <div class="row">
-                                <div class="col">
-                                    <h3 class="discount">50</h3>
-                                </div>
-                                <div class="col">
-                                    <span class="off">
-                                        <p class="precentage">%</p>
-                                        <p>OFF</p>
-                                    </span>
-                                </div>
-                            </div>
-                            <a href="#" class="btn btn-shop">Shop Now</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" src="/assets/images/home-res-banner.png" alt="First slide">
-                        <div class="text-col w-100">
-                            <h3 class="banner-heading-sm">Your Trusted Source for</h3>
-                            <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
-                            <div class="row">
-                                <div class="col">
-                                    <h3 class="discount">20</h3>
-                                </div>
-                                <div class="col">
-                                    <span class="off">
-                                        <p class="precentage">%</p>
-                                        <p>OFF</p>
-                                    </span>
-                                </div>
-                            </div>
-                            <a href="#" class="btn btn-shop">Shop Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- banners phone section : end -->
-
-        <section class="product-list d-none d-md-block">
+        <div class="checkout">
             <div class="container">
                 <div class="row">
-                    <div class=" filters-col col-md-3 col-sm-3 col-lg-3">
-                        <div class="row filters-head">
-                            <div class="col heading">
-                                <h5>Filters</h5>
-                            </div>
-                            <div class="col icon">
-                                <h5><i class="fa-solid fa-sliders"></i></h5>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="row filters-body">
-                            <div class="filter">
-                                <h6><span>Category:</span> Wiring Accessories</h6>
-                                <hr>
-                                <div class="check-list">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cat1">
-                                        <label class="form-check-label" for="cat1">
-                                            Decorative
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cat2">
-                                        <label class="form-check-label" for="cat2">
-                                            Moulded
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cat3">
-                                        <label class="form-check-label" for="cat3">
-                                            Metal Clad
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cat4">
-                                        <label class="form-check-label" for="cat4">
-                                            Modular
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cat5">
-                                        <label class="form-check-label" for="cat5">
-                                            Industrial Plug & Sockets
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cat6">
-                                        <label class="form-check-label" for="cat6">
-                                            Boxes
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cat7">
-                                        <label class="form-check-label" for="cat7">
-                                            WeatherProof
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cat8">
-                                        <label class="form-check-label" for="cat8">
-                                            Ceiling Accessories
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter">
-                                <h6>By Brand</h6>
-                                <hr>
-                                <div class="check-list">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cat1">
-                                        <label class="form-check-label" for="cat1">
-                                            Brand 01
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cat2">
-                                        <label class="form-check-label" for="cat2">
-                                            Brand 02
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cat3">
-                                        <label class="form-check-label" for="cat3">
-                                            Brand 03
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter">
-                                <h6>Availibity</h6>
-                                <hr>
-                                <div class="check-list">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cat2">
-                                        <label class="form-check-label" for="cat2">
-                                            Out Of Stock
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cat3">
-                                        <label class="form-check-label" for="cat3">
-                                            In Stock
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-12 col-sm-12 col-lg-12 d-grid align-items-center justify-content-center">
+                        <h3 class="section-heading">Checkout</h3>
+                        <hr class="heading-hr">
                     </div>
-                    <div class="products-col col-md-8 col-sm-8 col-lg-8">
-                        <div class="listing-toolbar">
-                            <div class="row p-3">
-                                <div class="col-8"></div>
-                                <div class="col-4 sort border px-3 py-1">
-                                    <span>Sort By:</span>
-                                    <select class="form-select" name="sort" id="sort">
-                                        <option value="Default">Default</option>
-                                        <option value="Ascending">Ascending</option>
-                                        <option value="Descending">Descending</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="listing">
-                            <div class="row px-3">
-                                <!-- cat 1 -->
-                                <div class="col-md-3 col-sm-3 col-lg-3">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/light.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-6 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-6 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
-                                            </div>
+                    <div class="col-md-12 col-sm-12 col-lg-12">
+                        <p><a class="continue" href="#">Continue shopping</a></p>
+                        <hr class="orange">
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-lg-6 payment-section p-2">
+                        <div class="bg-light-grey p-3">
+
+                            <div class="ship-to bg-white border accordion-item">
+                                <div class="accordion" onclick="toggleAccordion(1)">
+                                    <div class="head row p-2">
+                                        <div class="col-12 d-flex">
+                                            <div class="step-no">1</div>
+                                            <div class="heading"> Ship to</div>
                                         </div>
                                     </div>
+                                    <!-- <hr> -->
                                 </div>
-                                <!-- cat 2 -->
-                                <div class="col-md-3 col-sm-3 col-lg-3">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/led.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-6 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-6 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
+                                <div class="panel pt-3" id="panel1">
+                                    <form class="form" id="ship-form">
+                                        <div class="form-row d-flex">
+                                            <div class="form-group col-md-6 px-2">
+                                                <label class="form-label" for="email">Email</label>
+                                                <input class="form-control" type="email" name="email" id="email"
+                                                    placeholder="Enter your email" required>
                                             </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
+                                            <div class="form-group col-md-6 px-2">
+                                                <label class="form-label" for="phone">Phone</label>
+                                                <input class="form-control" type="number" name="phone" id="phone"
+                                                    placeholder="Enter your phone number" required>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <!-- cat 3 -->
-                                <div class="col-md-3 col-sm-3 col-lg-3">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/socket.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-6 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-6 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
+                                        <div class="form-row d-flex">
+                                            <div class="form-group col-md-12 p-2">
+                                                <label class="form-label" for="name">Full Name</label>
+                                                <input class="form-control" type="text" name="name" id="name"
+                                                    placeholder="Enter your full name" required>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <!-- cat 4 -->
-                                <div class="col-md-3 col-sm-3 col-lg-3">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/solar.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-6 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-6 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
+                                        <div class="form-row d-flex">
+                                            <div class="form-group col-md-12 p-2">
+                                                <label class="form-label" for="postcode">Post Code</label>
+                                                <input class="form-control" type="number" name="postcode" id="postcode"
+                                                    placeholder="Enter your post code" required>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <!-- cat 1 -->
-                                <div class="col-md-3 col-sm-3 col-lg-3">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/light.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-6 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-6 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
+                                        <div class="form-row d-flex">
+                                            <div class="form-group col-md-12 p-2">
+                                                <label class="form-label" for="email">Address</label>
+                                                <input class="form-control" type="text" name="address" id="addresss"
+                                                    placeholder="Enter your address" required>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <!-- cat 2 -->
-                                <div class="col-md-3 col-sm-3 col-lg-3">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/led.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-6 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-6 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
+                                        <div class="form-row d-flex align-items-center justify-content-center">
+                                            <div class="form-group col-md-12 m-3">
+                                                <!-- <a class="btn btn-payment">Continue Payment</a> -->
+                                                <button id="payment-btn" class="btn btn-payment w-100">Continue
+                                                    Payment</button>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <!-- cat 3 -->
-                                <div class="col-md-3 col-sm-3 col-lg-3">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/socket.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-6 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-6 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- cat 4 -->
-                                <div class="col-md-3 col-sm-3 col-lg-3">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/solar.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-6 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-6 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- cat 1 -->
-                                <div class="col-md-3 col-sm-3 col-lg-3">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/light.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-6 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-6 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- cat 2 -->
-                                <div class="col-md-3 col-sm-3 col-lg-3">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/led.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-6 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-6 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- cat 3 -->
-                                <div class="col-md-3 col-sm-3 col-lg-3">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/socket.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-6 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-6 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- cat 4 -->
-                                <div class="col-md-3 col-sm-3 col-lg-3">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/solar.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-6 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-6 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
 
-
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="product-listing d-block d-md-none py-2">
-            <div class="container">
-                <div class="row filters-row">
-                    <div class="col-6 d-flex align-items-start justify-content-start py-2">
-                        <a class="filter-btn" href="javascript:;"><span>
-                                <i class="fa-solid fa-sliders"></i>
-                            </span>
-                            &nbsp;Filters
-                        </a>
-                    </div>
-                    <div class="col-6 border d-flex align-items-end justify-content-end py-1">
-                        <span class="w-100 sort">Sort By:</span>
-                        <select class="form-select" name="sort" id="sort">
-                            <option value="Default">Default</option>
-                            <option value="Ascending">Ascending</option>
-                            <option value="Descending">Descending</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row product-row">
-                    <div class="col-12 products-col">
-                        <div class="listing">
-                            <div class="row px-3">
-                                <!-- cat 1 -->
-                                <div class="col-6">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/light.png" alt="">
+                            <div class="ship-to-edit bg-white border accordion-item">
+                                <div class="accordion">
+                                    <div class="head row p-2">
+                                        <div class="col-6 d-flex">
+                                            <i class="check fa-duotone fa-circle-check"></i>
+                                            <div class="heading"> Ship to</div>
                                         </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-7 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-5 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
-                                            </div>
+                                        <div class="col-6">
+                                            <p class="edit">
+                                                <a href="#" id="btn-edit">Edit</a>
+                                            </p>
                                         </div>
+
                                     </div>
+                                    <!-- <hr> -->
                                 </div>
-                                <!-- cat 2 -->
-                                <div class="col-6">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/led.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-7 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-5 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
-                                            </div>
-                                        </div>
+                                <div class="panel pt-3" style="display: block;">
+                                    <div class="info">
+                                        <h6>Personal Information</h6>
+                                        <p>ninja@impekable.com, 933923223</p>
                                     </div>
-                                </div>
-                                <!-- cat 3 -->
-                                <div class="col-6">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/socket.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-7 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-5 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- cat 4 -->
-                                <div class="col-6">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/solar.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-7 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-5 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- cat 1 -->
-                                <div class="col-6">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/light.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-7 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-5 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- cat 2 -->
-                                <div class="col-6">
-                                    <div class="card p-1">
-                                        <div class="card-top">
-                                            <img src="assets/images/popular/led.png" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
-                                            <div class="row">
-                                                <div class="col-7 rating">
-                                                    <span style="color: #ffc525;">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-5 pricing">
-                                                    <p>
-                                                        £20.29
-                                                    </p>
-                                                </div>
-                                                <span class="vat">ex. VAT, £4.68 inc. VAT</span>
-                                            </div>
-                                            <div class="row btn-row">
-                                                <a href="#" class="btn btncart"><i class="fas fa-shopping-cart"></i> Add
-                                                    to Cart</a>
-                                            </div>
-                                        </div>
+                                    <div class="info">
+                                        <h6>Address</h6>
+                                        <p>10 N. Martingale Road, Suite 400, Schaumburg, IL 60173</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <div class="slideRightToLeft filter-slider">
-            <div class="base-sidebar-content p-3">
-                <div class="base-sidebar-content-body">
-                    <div class="d-flex align-items-end justify-content-end w-100 border-bottom">
-                        <button class="back-to-cart filter_slide_close border-0 fs-1 p-0"><i
-                                class="fa-solid fa-xmark"></i></button>
-                    </div>
-                    <div class="filters-main-body p-2">
-                        <h3 class="main-heading">Filters</h3>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-6 px-3">
-                                <div class="accordion" id="filters_accordion">
-                                    <div id="filters_accordion_1">
-                                        <h4 class="accordion-header">
-                                            <a href="#" class="accordion-button shadow-none" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#filters_accordion_one"
-                                                aria-expanded="true" aria-controls="filters_accordion_one">
-                                                Category
-                                            </a>
-                                        </h4>
-                                        <div id="filters_accordion_one" class="accordion-collapse collapse show"
-                                            data-bs-parent="#filters_accordion">
-                                            <div class="accordion-body">
-                                                <div class="container p-0">
-                                                    <div class="check-list">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="cat1">
-                                                            <label class="form-check-label" for="cat1">
-                                                                Decorative
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="cat2">
-                                                            <label class="form-check-label" for="cat2">
-                                                                Moulded
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="cat3">
-                                                            <label class="form-check-label" for="cat3">
-                                                                Metal Clad
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="cat4">
-                                                            <label class="form-check-label" for="cat4">
-                                                                Modular
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="cat5">
-                                                            <label class="form-check-label" for="cat5">
-                                                                Industrial Plug & Sockets
-                                                            </label>
-                                                        </div>
+                            <div class="pay-with bg-white mt-5 border accordion-item">
+                                <div class="accordion" onclick="toggleAccordion(2)">
+                                    <div class="head row p-2">
+                                        <div class="col-12 d-flex">
+                                            <div class="step-no">2</div>
+                                            <div class="heading"> PAY WITH</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel methods" id="panel2">
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <input type="radio" id="creditCard" name="paymentMethod" checked>
+                                            <label for="creditCard" class="accordion-label"><i
+                                                    class="fa-regular fa-credit-card"></i> &nbsp;Credit/Debit
+                                                Card</label>
+                                            <div class="accordion-content">
+                                                <div class="form-row p-3">
+                                                    <div class="form-group col-12">
+                                                        <!-- Credit Card Details -->
+                                                        <label class="form-label" for="cardNumber">Card Number:</label>
+                                                        <input class="form-control form-input" type="text"
+                                                            id="cardNumber" name="cardNumber"
+                                                            placeholder="Enter card number">
+                                                        <!-- Add other credit card details here -->
                                                     </div>
-
+                                                </div>
+                                                <div class="form-row d-flex">
+                                                    <div class="form-group col-6  p-3 ">
+                                                        <!-- Credit Card Details -->
+                                                        <label class="form-label" for="cardNumber">Expiry Date</label>
+                                                        <input class="form-control form-input" type="text"
+                                                            id="cardNumber" name="cardNumber" placeholder="12/29">
+                                                        <!-- Add other credit card details here -->
+                                                    </div>
+                                                    <div class="form-group col-6  p-3">
+                                                        <!-- Credit Card Details -->
+                                                        <label class="form-label" for="cardNumber">CVC/CVV</label>
+                                                        <input class="form-control form-input" type="text"
+                                                            id="cardNumber" name="cardNumber" placeholder="123">
+                                                        <!-- Add other credit card details here -->
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div id="filters_accordion_2">
-                                        <h4 class="accordion-header">
-                                            <a href="#" class="accordion-button collapsed shadow-none" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#filters_accordion_two"
-                                                aria-expanded="false" aria-controls="filters_accordion_two">
-                                                By Brand
-                                            </a>
-                                        </h4>
-                                        <div id="filters_accordion_two" class="accordion-collapse collapse"
-                                            data-bs-parent="#filters_accordion">
-                                            <div class="accordion-body">
-                                                <div class="container p-0">
-                                                    <div class="check-list">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="cat2">
-                                                            <label class="form-check-label" for="cat2">
-                                                                Out Of Stock
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="cat3">
-                                                            <label class="form-check-label" for="cat3">
-                                                                In Stock
-                                                            </label>
-                                                        </div>
+                                        <div class="accordion-item">
+                                            <input type="radio" id="paypal" name="paymentMethod">
+                                            <label for="paypal" class="accordion-label">PayPal</label>
+                                            <div class="accordion-content">
+                                                <div class="form-row p-3">
+                                                    <div class="form-group col-12">
+                                                        <!-- Credit Card Details -->
+                                                        <label class="form-label" for="cardNumber">Card Number:</label>
+                                                        <input class="form-control form-input" type="text"
+                                                            id="cardNumber" name="cardNumber"
+                                                            placeholder="Enter card number">
+                                                        <!-- Add other credit card details here -->
+                                                    </div>
+                                                </div>
+                                                <div class="form-row d-flex">
+                                                    <div class="form-group col-6  p-3 ">
+                                                        <!-- Credit Card Details -->
+                                                        <label class="form-label" for="cardNumber">Expiry Date</label>
+                                                        <input class="form-control form-input" type="text"
+                                                            id="cardNumber" name="cardNumber" placeholder="12/29">
+                                                        <!-- Add other credit card details here -->
+                                                    </div>
+                                                    <div class="form-group col-6  p-3">
+                                                        <!-- Credit Card Details -->
+                                                        <label class="form-label" for="cardNumber">CVC/CVV</label>
+                                                        <input class="form-control form-input" type="text"
+                                                            id="cardNumber" name="cardNumber" placeholder="123">
+                                                        <!-- Add other credit card details here -->
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div id="filters_accordion_3">
-                                        <h4 class="accordion-header">
-                                            <a href="#" class="accordion-button collapsed shadow-none" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#filters_accordion_three"
-                                                aria-expanded="false" aria-controls="filters_accordion_one">
-                                                Availibity
-                                            </a>
-                                        </h4>
-                                        <div id="filters_accordion_three" class="accordion-collapse collapse"
-                                            data-bs-parent="#filters_accordion">
-                                            <div class="accordion-body">
-                                                <div class="container p-0">
-                                                    <div class="check-list">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="cat2">
-                                                            <label class="form-check-label" for="cat2">
-                                                                Out Of Stock
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="cat3">
-                                                            <label class="form-check-label" for="cat3">
-                                                                In Stock
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    </p>
+                                    <a href="#" class="btn btn-pay">Pay &pound;25.99</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-lg-6 cart-section p-2">
+                        <div class="bg-light-grey">
+                            <div class="cart-product-list">
+                                <div class="row product">
+                                    <div class="col-2">
+                                        <img src="assets/images/product-icon.png" class="w-100" alt="product-icon">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="row p-2">
+                                            <h6 class="product-name">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR
+                                                – IP54 – CTA – White</h6>
+                                            <div class="qty">
+                                                <div class="d-flex justify-content-start align-items-start">
+                                                    <p>Qty: </p>
+                                                    <a class="border btn btn-minus"><i
+                                                            class="fa-solid fa-minus"></i></a>
+                                                    <input class="form-control" disabled type="text" value="1">
+                                                    <a class="border btn btn-plus"><i class="fa-solid fa-plus"></i></a>
                                                 </div>
                                             </div>
+                                            <p class="remove"><i class="fa-solid fa-trash"></i>&nbsp;Remove</p>
                                         </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <p class="price">£20.29</p>
+                                        <p class="old-price">£25.29</p>
+                                    </div>
+                                </div>
+                                <div class="row product">
+                                    <div class="col-2">
+                                        <img src="assets/images/product-icon.png" class="w-100" alt="product-icon">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="row p-2">
+                                            <h6 class="product-name">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR
+                                                – IP54 – CTA – White</h6>
+                                            <div class="qty">
+                                                <div class="d-flex justify-content-start align-items-start">
+                                                    <p>Qty: </p>
+                                                    <a class="border btn btn-minus"><i
+                                                            class="fa-solid fa-minus"></i></a>
+                                                    <input class="form-control" disabled type="text" value="1">
+                                                    <a class="border btn btn-plus"><i class="fa-solid fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                            <p class="remove"><i class="fa-solid fa-trash"></i>&nbsp;Remove</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <p class="price">£20.29</p>
+                                        <p class="old-price">£25.29</p>
+                                    </div>
+                                </div>
+                                <div class="row total">
+                                    <div class="col-6">
+                                        <p>Subtotal</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>£20.29</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>VAT</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>£5.29</p>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="row total">
+                                    <div class="col-6">
+                                        <h6>Total</h6>
+                                    </div>
+                                    <div class="col-6">
+                                        <h6>£25.58</h6>
                                     </div>
                                 </div>
                             </div>
@@ -2437,6 +1722,7 @@
                 </div>
             </div>
         </div>
+
     </main>
 
     <footer id="footer">
@@ -2670,37 +1956,55 @@
             interval: 500,
             ride: true
         });
-
-        $('#bannerCarousel').carousel({
-            interval: 3000,
-            ride: true
-        });
-
-        $('#bannerCarousel1').carousel({
-            interval: 3000,
-            ride: true
-        });
     });
+
+    $(".ship-to-edit").hide();
+    $("#panel1").css("display", "block");
+
+    $(".btn-payment").on("click", function () {
+        toggleAccordion(2);
+    });
+    $("#payment-btn").on("click", function () {
+        $(".ship-to-edit").show();
+        $(".ship-to").hide();
+
+    });
+    $("#btn-edit").on("click", function () {
+        toggleAccordion(1);
+        $(".ship-to").show();
+        $(".ship-to-edit").hide();
+    });
+   
+    function toggleAccordion(panelNumber) {
+        if (panelNumber == 1) {
+            $("#panel2").css("display", "none");
+            $("#panel1").css("display", "block");
+        }
+        else {
+            $("#panel1").css("display", "none");
+            $("#panel2").css("display", "block");
+        }
+    }
+    
+    function validateForm(panelNumber) {
+        // Add your validation logic here for the form in the specified panel
+        var form = document.getElementById('form' + panelNumber);
+        // For example, check if required fields have values
+        var requiredFields = form.querySelectorAll('[required]');
+        for (var i = 0; i < requiredFields.length; i++) {
+            if (!requiredFields[i].value) {
+                alert('Please fill in all required fields.');
+                return false;
+            }
+        }
+
+        // If validation passes, you can submit the form or perform other actions
+        alert('Form submitted successfully!');
+        return true;
+    }
 
 </script>
 <script>
-    $(document).on('click', ".filter-btn", function () {
-        if ($(".filter-slider").hasClass("show") === false) {
-            $(".filter-slider").addClass("show");
-            $("body").attr("style", "overflow: hidden;");
-            $(".base-sidebar-background").css("display", "");
-        } else {
-            $(".filter-slider").removeClass("show");
-            $("body").removeAttr("style");
-        }
-    });
-    $(document).on('click', ".filter_slide_close, .base-sidebar-background", function () {
-        $(".filter-slider").removeClass("show");
-        $(".base-sidebar-background").css("overflow", "hidden");
-        $("body").removeAttr("style");
-        $(".base-sidebar-background").css("display", "none");
-    });
-
     $(document).on('click', ".menu-btn", function () {
         if ($(".menu-slider").hasClass("show") === false) {
             $(".menu-slider").addClass("show");
@@ -2718,7 +2022,6 @@
         $(".base-sidebar-background").css("display", "none");
     });
 </script>
-
 <script>
     // Function to handle sticky behavior
     function stickyHeader(headerId, navId) {
@@ -2738,7 +2041,7 @@
     // When the user scrolls the page, execute stickyHeader function
     window.onscroll = function () {
         stickyHeader("header-desktop", "nav");
-        stickyHeader("header-mobile", "nav");
+        stickyHeader("header-mobile"), "nav";
         // stickyHeader("nav");
     };
 </script>
