@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/assets/images/favicon-white.png" type="image/x-icon">
+
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -26,50 +27,6 @@
     <title>The Electro Hub</title>
 
     <style>
-        /* Style the tab */
-        .tab {
-            float: left;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-            width: 30%;
-            height: 300px;
-        }
-
-        /* Style the buttons inside the tab */
-        .tab button {
-            display: block;
-            background-color: inherit;
-            color: black;
-            padding: 22px 16px;
-            width: 100%;
-            border: none;
-            outline: none;
-            text-align: left;
-            cursor: pointer;
-            transition: 0.3s;
-            font-size: 17px;
-        }
-
-        /* Change background color of buttons on hover */
-        .tab button:hover {
-            background-color: #ddd;
-        }
-
-        /* Create an active/current "tab button" class */
-        .tab button.active {
-            background-color: #ccc;
-        }
-
-        /* Style the tab content */
-        .tabcontent {
-            float: left;
-            padding: 0px 12px;
-            border: 1px solid #ccc;
-            width: 70%;
-            border-left: none;
-            height: 300px;
-        }
-
         /* Mega menu styles */
         .mega-menu {
             display: none;
@@ -114,8 +71,9 @@
         <div class="container">
             <div class="header-black">
                 <div class="logo">
-                    <img src="assets/images/logo-white.png" alt="logo">
+                    <a href="index.html"><img src="assets/images/logo-white.png" alt="logo"></a>
                 </div>
+                <div class="spacer"></div>
                 <div class="searchbar">
                     <form action="#">
                         <div class="input-group">
@@ -127,19 +85,21 @@
                         </div>
                     </form>
                 </div>
+                <div class="spacer"></div>
                 <div class="user-nav">
                     <!-- <div class="user-nav-item">
                         <a class="btn" href="#"><i class="fa-solid fa-shop"></i>
                             Store</a>
                     </div> -->
-                    <div class="user-nav-item">
-                        <a class="btn" href="#"><i class="fa-regular fa-user"></i>
+                   <div class="user-nav-item">
+                        <a class="btn" href="login.html"><i class="fa-regular fa-user"></i>
                             Login</a>
                     </div>
                     <div class="user-nav-item">
-                        <a href="javascript:;" class="btn" href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <a href="#" class="btn" href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i>
                             Cart</a>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -151,7 +111,7 @@
             <div class="row">
                 <div class="col-1">
                     <!-- menu -->
-                   <a class="btn mobile-nav-toggle menu-btn" href="javascript:;">
+                    <a class="btn mobile-nav-toggle menu-btn" href="javascript:;">
                         <i class="fa-solid fa-bars"></i>
                     </a>
                 </div>
@@ -167,7 +127,7 @@
                                 Store</a>
                         </div> -->
                         <div class="user-nav-item">
-                            <a class="btn" href="#"><i class="fa-regular fa-user"></i>
+                            <a class="btn" href="login.html"><i class="fa-regular fa-user"></i>
                                 Login</a>
                         </div>
                         <div class="user-nav-item">
@@ -290,8 +250,8 @@
     </div>
     <!-- mobile ticker : end -->
 
-     <!-- Desktop nav : Start -->
-     <div id="nav" class="nav d-md-block d-none">
+    <!-- Desktop nav : Start -->
+    <div id="nav" class="nav d-md-block d-none">
         <div class="container">
             <ul>
                 <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Wiring Accessories
@@ -1479,29 +1439,113 @@
                         <h3 class="section-heading">My Account</h3>
                         <hr class="heading-hr">
                     </div>
-                    <div class="col-md-12">
+                    <div class="tab-main col-md-12">
 
                         <div class="tab">
-                            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">My
+                            <button class="tablinks" onclick="openTab(event, 'profile')" id="defaultOpen">My
                                 Profile</button>
-                            <button class="tablinks" onclick="openCity(event, 'Paris')">Order History</button>
-                            <button class="tablinks" onclick="openCity(event, 'Tokyo')">View All Ordered
+                            <button class="tablinks" onclick="openTab(event, 'history')">Order History</button>
+                            <button class="tablinks" onclick="openTab(event, 'all')">View All Ordered
                                 Products</button>
+                            <button class="tablinks" onclick="openTab(event, 'password')">Change Password</button>
                         </div>
 
-                        <div id="London" class="tabcontent">
-                            <h3>My Profile</h3>
-                            <!-- <p>London is the capital city of England.</p> -->
+                        <div id="profile" class="tabcontent">
+                            <div class="d-grid align-items-center justify-content-center">
+                                <h3 class="tab-title">My Profile</h3>
+                                <hr class="head-hr">
+                            </div>
+                            <div class="profile-details">
+                                <div class="row mb-3">
+                                    <label class="col-lg-4 col-form-label fw-semibold">Avatar</label>
+
+                                    <div class="col-lg-8">
+                                        <div class="image-input image-input-outline" data-kt-image-input="true">
+                                            <label class="btn btn-icon btn-circle bg-body shadow">
+                                                <input type="file" name="avatar" accept=".png, .jpg, .jpeg">
+                                            </label>
+                                        </div>
+                                        <div class="form-text">Allowed file types: png, jpg, jpeg.</div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label class="col-lg-4 col-form-label fw-semibold">Full Name</label>
+
+                                    <div class="col-lg-8">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input type="text" name="fname"
+                                                    class="form-control form-control-lg mb-3 mb-lg-0"
+                                                    placeholder="First name" value="Max">
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <input type="text" name="lname" class="form-control form-control-lg"
+                                                    placeholder="Last name" value="Smith">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label class="col-lg-4 col-form-label fw-semibold">Company</label>
+
+                                    <div class="col-lg-8">
+                                        <input type="text" name="company" class="form-control form-control-lg"
+                                            placeholder="Company name" value="Electrohub">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label class="col-lg-4 col-form-label fw-semibold">Contact Phone</label>
+
+                                    <div class="col-lg-8">
+                                        <input type="tel" name="phone" class="form-control form-control-lg"
+                                            placeholder="Phone number" value="044 3276 454 935">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label class="col-lg-4 col-form-label fw-semibold">Company Site</label>
+
+                                    <div class="col-lg-8 fv-row">
+                                        <input type="text" name="website" class="form-control form-control-lg"
+                                            placeholder="Company website" value="max@teh.com">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-0">
+                                    <div class="buttons d-flex justify-content-end">
+                                        <button type="submit" class="btn btn-save">Save Changes</button>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div id="Paris" class="tabcontent">
-                            <h3>Order History</h3>
-                            <!-- <p>Paris is the capital of France.</p> -->
+                        <div id="history" class="tabcontent">
+                            <div class="d-grid align-items-center justify-content-center">
+                                <h3 class="tab-title">Order History</h3>
+                                <hr class="head-hr">
+                            </div>
+
                         </div>
 
-                        <div id="Tokyo" class="tabcontent">
-                            <h3>View All Ordered Products</h3>
-                            <!-- <p>Tokyo is the capital of Japan.</p> -->
+                        <div id="all" class="tabcontent">
+                            <div class="d-grid align-items-center justify-content-center">
+                                <h3 class="tab-title">View All Ordered Products</h3>
+                                <hr class="head-hr">
+                            </div>
+
+                        </div>
+
+                        <div id="password" class="tabcontent">
+                            <div class="d-grid align-items-center justify-content-center">
+                                <h3 class="tab-title">Change Password</h3>
+                                <hr class="head-hr">
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -1745,7 +1789,7 @@
 
 </script>
 <script>
-    function openCity(evt, cityName) {
+    function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -1755,7 +1799,7 @@
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
     }
 

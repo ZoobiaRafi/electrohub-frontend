@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/assets/images/favicon-white.png" type="image/x-icon">
+
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -70,8 +71,9 @@
         <div class="container">
             <div class="header-black">
                 <div class="logo">
-                    <img src="assets/images/logo-white.png" alt="logo">
+                    <a href="index.html"><img src="assets/images/logo-white.png" alt="logo"></a>
                 </div>
+                <div class="spacer"></div>
                 <div class="searchbar">
                     <form action="#">
                         <div class="input-group">
@@ -83,6 +85,7 @@
                         </div>
                     </form>
                 </div>
+                <div class="spacer"></div>
                 <div class="user-nav">
                     <!-- <div class="user-nav-item">
                         <a class="btn" href="#"><i class="fa-solid fa-shop"></i>
@@ -93,7 +96,7 @@
                             Login</a>
                     </div>
                     <div class="user-nav-item">
-                        <a href="javascript:;" class="btn" href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <a href="#" class="btn" href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i>
                             Cart</a>
                     </div>
                 </div>
@@ -107,7 +110,7 @@
             <div class="row">
                 <div class="col-1">
                     <!-- menu -->
-                   <a class="btn mobile-nav-toggle menu-btn" href="javascript:;">
+                    <a class="btn mobile-nav-toggle menu-btn" href="javascript:;">
                         <i class="fa-solid fa-bars"></i>
                     </a>
                 </div>
@@ -246,8 +249,8 @@
     </div>
     <!-- mobile ticker : end -->
 
-     <!-- Desktop nav : Start -->
-     <div id="nav" class="nav d-md-block d-none">
+    <!-- Desktop nav : Start -->
+    <div id="nav" class="nav d-md-block d-none">
         <div class="container">
             <ul>
                 <li><a class="menu-link d-flex align-items-center justify-content-center" href="#">Wiring Accessories
@@ -1517,12 +1520,25 @@
                                 <li><i class="fa-solid fa-bolt"></i>Mounting Ceiling or Wall</li>
                                 <li><i class="fa-solid fa-bolt"></i>Warranty (Years) 2</li>
                             </ul>
+                            <hr class="hr-light-gray">
                         </div>
-                        <div class="row buttons">
-                            <div class="col-6 d-flex justify-content-center align-items-center">
-                                <a class="border btn btn-plus"><i class="fa-solid fa-plus"></i></a>
-                                <input class="form-control" type="text" value="1">
+                        <div class="row buttons d-none d-md-flex">
+                            <div class="col-4 d-flex justify-content-end align-items-end">
                                 <a class="border btn btn-minus"><i class="fa-solid fa-minus"></i></a>
+                                <input class="form-control" type="text" value="1">
+                                <a class="border btn btn-plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                            <div class="col-8">
+                                <a href="#" class="btn btn-cart" data-bs-toggle="modal" data-bs-target="#cart-modal"><i
+                                        class="fa-solid fa-cart-shopping cart-icon"></i> Add
+                                    to Cart</a>
+                            </div>
+                        </div>
+                        <div class="row buttons d-flex d-md-none">
+                            <div class="col-6 d-flex justify-content-center align-items-center">
+                                <a class="border btn btn-minus"><i class="fa-solid fa-minus"></i></a>
+                                <input class="form-control" type="text" value="1">
+                                <a class="border btn btn-plus"><i class="fa-solid fa-plus"></i></a>
                             </div>
                             <div class="col-6">
                                 <a href="#" class="btn btn-cart" data-bs-toggle="modal" data-bs-target="#cart-modal"><i
@@ -1545,13 +1561,17 @@
                                 aria-selected="true">Product
                                 Details</button>
                         </li>
-                        <li class="border"></li>
+                        <li class="border-li">
+                            <div class="border-div"></div>
+                        </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs"
                                 type="button" role="tab" aria-controls="specs"
                                 aria-selected="false">Specifications</button>
                         </li>
-                        <li class="border"></li>
+                        <li class="border-li">
+                            <div class="border-div"></div>
+                        </li>
 
                     </ul>
                     <div class="tab-content" id="myTabContent">
@@ -1708,7 +1728,8 @@
                                     <i class="fa-regular fa-star"></i>
                                 </span>
 
-                                <a href="#" class="btn btn-submit">Submit</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#review-modal"
+                                    class="btn btn-submit1">Submit</a>
                             </div>
                         </div>
                     </div>
@@ -1836,8 +1857,9 @@
                                             <img src="assets/images/popular/light.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -1869,8 +1891,9 @@
                                             <img src="assets/images/popular/led.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -1902,8 +1925,9 @@
                                             <img src="assets/images/popular/socket.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -1935,8 +1959,9 @@
                                             <img src="assets/images/popular/solar.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -1968,8 +1993,9 @@
                                             <img src="assets/images/popular/vent.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2001,8 +2027,9 @@
                                             <img src="assets/images/popular/switch.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2038,8 +2065,9 @@
                                             <img src="assets/images/popular/solar.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2071,8 +2099,9 @@
                                             <img src="assets/images/popular/vent.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2104,8 +2133,9 @@
                                             <img src="assets/images/popular/switch.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2170,8 +2200,9 @@
                                             <img src="assets/images/popular/light.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-7 rating ">
                                                     <span style="color: #ffc525;">
@@ -2203,8 +2234,9 @@
                                             <img src="assets/images/popular/led.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-7 rating ">
                                                     <span style="color: #ffc525;">
@@ -2240,8 +2272,9 @@
                                             <img src="assets/images/popular/solar.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-7 rating ">
                                                     <span style="color: #ffc525;">
@@ -2273,8 +2306,9 @@
                                             <img src="assets/images/popular/switch.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-7 rating ">
                                                     <span style="color: #ffc525;">
@@ -2310,8 +2344,9 @@
                                             <img src="assets/images/popular/socket.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-7 rating ">
                                                     <span style="color: #ffc525;">
@@ -2343,8 +2378,9 @@
                                             <img src="assets/images/popular/vent.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-7 rating ">
                                                     <span style="color: #ffc525;">
@@ -2409,8 +2445,9 @@
                                             <img src="assets/images/popular/light.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2442,8 +2479,9 @@
                                             <img src="assets/images/popular/led.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2475,8 +2513,9 @@
                                             <img src="assets/images/popular/socket.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2508,8 +2547,9 @@
                                             <img src="assets/images/popular/solar.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2541,8 +2581,9 @@
                                             <img src="assets/images/popular/vent.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2574,8 +2615,9 @@
                                             <img src="assets/images/popular/switch.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2611,8 +2653,9 @@
                                             <img src="assets/images/popular/solar.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2644,8 +2687,9 @@
                                             <img src="assets/images/popular/vent.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2677,8 +2721,9 @@
                                             <img src="assets/images/popular/switch.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-6 rating">
                                                     <span style="color: #ffc525;">
@@ -2743,8 +2788,9 @@
                                             <img src="assets/images/popular/light.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-7 rating ">
                                                     <span style="color: #ffc525;">
@@ -2776,8 +2822,9 @@
                                             <img src="assets/images/popular/led.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-7 rating ">
                                                     <span style="color: #ffc525;">
@@ -2813,8 +2860,9 @@
                                             <img src="assets/images/popular/solar.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-7 rating ">
                                                     <span style="color: #ffc525;">
@@ -2846,8 +2894,9 @@
                                             <img src="assets/images/popular/switch.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-7 rating ">
                                                     <span style="color: #ffc525;">
@@ -2883,8 +2932,9 @@
                                             <img src="assets/images/popular/socket.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-7 rating ">
                                                     <span style="color: #ffc525;">
@@ -2916,8 +2966,9 @@
                                             <img src="assets/images/popular/vent.png" alt="">
                                         </div>
                                         <div class="card-body">
-                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
-                                                IP54 – CTA – White</a></h5>
+                                            <h5 class="card-title"><a href="product-detail.html">OV15WPIR 15W LED Oval
+                                                    Bulkhead – Standard With PIR –
+                                                    IP54 – CTA – White</a></h5>
                                             <div class="row">
                                                 <div class="col-7 rating ">
                                                     <span style="color: #ffc525;">
@@ -2951,8 +3002,8 @@
         <!-- more product Phone :end -->
 
         <!-- addtocart modal : Start -->
-        <div class="modal fade bd-example-modal-lg" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="cart-modal-title"
-            aria-hidden="true">
+        <div class="modal fade bd-example-modal-lg" id="cart-modal" tabindex="-1" role="dialog"
+            aria-labelledby="cart-modal-title" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header p-0 m-0 border-0 d-flex align-items-end justify-content-end">
@@ -2966,17 +3017,18 @@
                         <div class="cart-product-list">
                             <div class="row product border-bottom">
                                 <div class="col-2">
-                                    <img src="assets/images/product-icon.png"class="w-100"  alt="product-icon">
+                                    <img src="assets/images/product-icon.png" class="w-100" alt="product-icon">
                                 </div>
                                 <div class="col-8">
                                     <div class="row p-2">
-                                        <h6 class="product-name">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR – IP54 – CTA – White</h6>
+                                        <h6 class="product-name">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                            IP54 – CTA – White</h6>
                                         <div class="qty">
                                             <div class="d-flex justify-content-start align-items-start">
                                                 <p>Qty: </p>
-                                                <a class="border btn btn-plus"><i class="fa-solid fa-plus"></i></a>
-                                                <input class="form-control" disabled type="text" value="1">
                                                 <a class="border btn btn-minus"><i class="fa-solid fa-minus"></i></a>
+                                                <input class="form-control" disabled type="text" value="1">
+                                                <a class="border btn btn-plus"><i class="fa-solid fa-plus"></i></a>
                                             </div>
                                         </div>
                                         <p class="remove"><i class="fa-solid fa-trash"></i>&nbsp;Remove</p>
@@ -2993,13 +3045,14 @@
                                 </div>
                                 <div class="col-8">
                                     <div class="row p-2">
-                                        <h6 class="product-name">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR – IP54 – CTA – White</h6>
+                                        <h6 class="product-name">OV15WPIR 15W LED Oval Bulkhead – Standard With PIR –
+                                            IP54 – CTA – White</h6>
                                         <div class="qty">
                                             <div class="d-flex justify-content-start align-items-start">
                                                 <p>Qty: </p>
-                                                <a class="border btn btn-plus"><i class="fa-solid fa-plus"></i></a>
-                                                <input class="form-control" disabled type="text" value="1">
                                                 <a class="border btn btn-minus"><i class="fa-solid fa-minus"></i></a>
+                                                <input class="form-control" disabled type="text" value="1">
+                                                <a class="border btn btn-plus"><i class="fa-solid fa-plus"></i></a>
                                             </div>
                                         </div>
                                         <p class="remove"><i class="fa-solid fa-trash"></i>&nbsp;Remove</p>
@@ -3014,12 +3067,66 @@
                     </div>
                     <div class="modal-footer border-0">
                         <a href="checkout.html" class="btn btn-proceed">Proceed to checkout</a>
-                        <button class="btn btn-continue" type="button" data-bs-dismiss="modal">Continue Shopping</button>
+                        <button class="btn btn-continue" type="button" data-bs-dismiss="modal">Continue
+                            Shopping</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- addtocart modal : End -->
+
+        <!-- review modal : Start -->
+        <div class="modal fade bd-example-modal-lg" id="review-modal" tabindex="-1" role="dialog"
+            aria-labelledby="review-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header p-0 m-0 border-0 d-flex align-items-end justify-content-end">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title text-center" id="cart-modal-title">Write a Review!</h5>
+                        <hr class="title-hr">
+                        <div class="review">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="rate row d-flex">
+                                        <div class="col-3">
+                                            <img src="assets/images/avatar.png" class="w-100" alt="avatar">
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="info">
+                                                <p class="name p-0 m-0">Dheeraj Ahuja</p>
+                                                <p class="stars p-0 m-0">
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <span>(0 Stars)</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="info w-100 p-3">
+                                        <textarea class="form-input form-control" name="review" id="" rows="6" placeholder="Write a review"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-cancel" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-review">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- review modal : End -->
 
     </main>
 

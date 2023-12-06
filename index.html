@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/assets/images/favicon-white.png" type="image/x-icon">
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -126,8 +126,9 @@
         <div class="container">
             <div class="header-black">
                 <div class="logo">
-                    <img src="assets/images/logo-white.png" alt="logo">
+                    <a href="index.html"><img src="assets/images/logo-white.png" alt="logo"></a>
                 </div>
+                <div class="spacer"></div>
                 <div class="searchbar">
                     <form action="#">
                         <div class="input-group">
@@ -139,6 +140,7 @@
                         </div>
                     </form>
                 </div>
+                <div class="spacer"></div>
                 <div class="user-nav">
                     <!-- <div class="user-nav-item">
                         <a class="btn" href="#"><i class="fa-solid fa-shop"></i>
@@ -149,7 +151,7 @@
                             Login</a>
                     </div>
                     <div class="user-nav-item">
-                        <a href="javascript:;" class="btn" href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <a href="#" class="btn" href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i>
                             Cart</a>
                     </div>
                 </div>
@@ -1138,7 +1140,7 @@
                     <div class="row">
                         <div class="col-md-6 px-3">
                             <div class="accordion" id="menu_accordion">
-                                <div id="menu_accordion">
+                                <div id="menu_accordion_0">
                                     <h4 class="accordion-header">
                                         <a href="index.html" class="accordion-button single shadow-none" type="button">
                                             <i style="color: var(--primaryOrangeDark);"
@@ -1550,7 +1552,9 @@
             <div id="bannerCarousel1" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="/assets/images/home-res-banner.png" alt="First slide">
+                        <div class="img" style="background: url('assets/images/home-res-banner.png');">
+                        </div>
+                        <!-- <img class="d-block w-100" src="/assets/images/home-res-banner.png" alt="First slide"> -->
                         <div class="text-col w-100">
                             <h3 class="banner-heading-sm">Your Trusted Source for</h3>
                             <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
@@ -1569,7 +1573,9 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/home-res-banner.png" alt="First slide">
+                        <div class="img" style="background: url('assets/images/home-res-banner.png');">
+                        </div>
+                        <!-- <img class="d-block w-100" src="/assets/images/home-res-banner.png" alt="First slide"> -->
                         <div class="text-col w-100">
                             <h3 class="banner-heading-sm">Your Trusted Source for</h3>
                             <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
@@ -1587,31 +1593,6 @@
                             <a href="#" class="btn btn-shop">Shop Now</a>
                         </div>
                     </div>
-                    <!-- <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/home-res-banner.png" alt="Second slide">
-                        <div class="row text">
-                            <div class="col-md-6 col-lg-6 col-sm-6 text-col1">
-                                <h3 class="banner-heading-sm">Your Trusted Source for</h3>
-                                <h2 class="banner-heading-lg">ELECTRICAL EXCELLENCE</h2>
-                            </div>
-
-                            <div class="col-md-6 col-lg-6 col-sm-6 text-col2">
-                                <h4 class="upto">Upto</h4>
-                                <div class="row">
-                                    <div class="col">
-                                        <h3 class="discount">20</h3>
-                                    </div>
-                                    <div class="col">
-                                        <span class="off">
-                                            <p class="precentage">%</p>
-                                            <p>OFF</p>
-                                        </span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-shop">Shop Now</a>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -1692,11 +1673,11 @@
                                 <!-- cat 1 -->
                                 <div class="col-md-2 col-sm-2 col-lg-2">
                                     <div class="card border-0">
-                                        <div class="circle-outer px-5">
+                                        <div class="circle-outer">
                                             <div class="circle">
-                                                <img class="img2" src="assets/images/categories/wiring-2.png"
+                                                <img style="height: 75px; width: 75px;" class="img1" src="assets/images/categories/wiring-2.png"
                                                     alt="wiring-2">
-                                                <img class="img1" src="assets/images/categories/wiring-1.png"
+                                                <img style="height: 65px; width: 65px;" class="img2" src="assets/images/categories/wiring-1.png"
                                                     alt="wiring-1">
                                             </div>
                                         </div>
@@ -1708,12 +1689,12 @@
                                 <!-- cat 1 -->
                                 <div class="col-md-2 col-sm-2 col-lg-2">
                                     <div class="card border-0">
-                                        <div class="circle-outer px-5">
+                                        <div class="circle-outer">
                                             <div class="circle">
-                                                <img class="img1" src="assets/images/categories/lights&lamps-1.png"
+                                                <img class="img2" style="height: 65px; width: 65px;" src="assets/images/categories/lights&lamps-2.png"
+                                                alt="lights&lamps-2">
+                                                <img class="img1"  src="assets/images/categories/lights&lamps-1.png"
                                                     alt="lights&lamps-1">
-                                                <img class="img2" src="assets/images/categories/lights&lamps-2.png"
-                                                    alt="lights&lamps-2">
                                             </div>
                                         </div>
                                         <div class="category-title">
@@ -1724,7 +1705,7 @@
                                 <!-- cat 1 -->
                                 <div class="col-md-2 col-sm-2 col-lg-2">
                                     <div class="card border-0">
-                                        <div class="circle-outer px-5">
+                                        <div class="circle-outer">
                                             <div class="circle">
                                                 <img class="img2" src="assets/images/categories/heat&vent-1.png"
                                                     alt="heat&vent-1">
@@ -1740,7 +1721,7 @@
                                 <!-- cat 1 -->
                                 <div class="col-md-2 col-sm-2 col-lg-2">
                                     <div class="card border-0">
-                                        <div class="circle-outer px-5">
+                                        <div class="circle-outer">
                                             <div class="circle">
                                                 <img class="img1" src="assets/images/categories/fire&security-2.png"
                                                     alt="fire&security-2">
@@ -1756,7 +1737,7 @@
                                 <!-- cat 1 -->
                                 <div class="col-md-2 col-sm-2 col-lg-2">
                                     <div class="card border-0">
-                                        <div class="circle-outer px-5">
+                                        <div class="circle-outer">
                                             <div class="circle">
                                                 <img class="img2" src="assets/images/categories/circuit-2.png"
                                                     alt="circuit-2">
@@ -1772,11 +1753,11 @@
                                 <!-- cat 1 -->
                                 <div class="col-md-2 col-sm-2 col-lg-2">
                                     <div class="card border-0">
-                                        <div class="circle-outer px-5">
+                                        <div class="circle-outer">
                                             <div class="circle">
-                                                <img class="img1" src="assets/images/categories/smart-1.png"
+                                                <img class="img2" src="assets/images/categories/smart-1.png"
                                                     alt="smart-1">
-                                                <img class="img2" src="assets/images/categories/smart-2.png"
+                                                <img class="img1" src="assets/images/categories/smart-2.png"
                                                     alt="smart-2">
                                             </div>
                                         </div>
@@ -1792,7 +1773,7 @@
                                 <!-- cat 1 -->
                                 <div class="col-md-2 col-sm-2 col-lg-2">
                                     <div class="card border-0">
-                                        <div class="circle-outer px-5">
+                                        <div class="circle-outer">
                                             <div class="circle">
                                                 <img class="img1" src="assets/images/categories/tools-2.png"
                                                     alt="tools-2">
@@ -1801,7 +1782,7 @@
                                             </div>
                                         </div>
                                         <div class="category-title">
-                                            <h5>Tools</h5>
+                                            <h5>Tools & Hardware</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1841,11 +1822,11 @@
                                 <!-- cat 1 -->
                                 <div class="col-3">
                                     <div class="card border-0">
-                                        <div class="circle-outer">
+                                        <div class="circle-outer p-2">
                                             <div class="circle">
-                                                <img class="img2" src="assets/images/categories/wiring-2.png"
+                                                <img class="img1" style="height: 40px;width: 40px;" src="assets/images/categories/wiring-1.png"
                                                     alt="wiring-2">
-                                                <img class="img1" src="assets/images/categories/wiring-1.png"
+                                                <img class="img2" style="height: 40px;width: 40px;" src="assets/images/categories/wiring-2.png"
                                                     alt="wiring-1">
                                             </div>
                                         </div>
@@ -1857,12 +1838,12 @@
                                 <!-- cat 1 -->
                                 <div class="col-3">
                                     <div class="card border-0">
-                                        <div class="circle-outer">
+                                        <div class="circle-outer p-2">
                                             <div class="circle">
-                                                <img class="img1" src="assets/images/categories/lights&lamps-1.png"
+                                                <img class="img1" src="assets/images/categories/lights&lamps-2.png"
+                                                alt="lights&lamps-2">
+                                                <img class="img2" src="assets/images/categories/lights&lamps-1.png"
                                                     alt="lights&lamps-1">
-                                                <img class="img2" src="assets/images/categories/lights&lamps-2.png"
-                                                    alt="lights&lamps-2">
                                             </div>
                                         </div>
                                         <div class="category-title">
@@ -1873,7 +1854,7 @@
                                 <!-- cat 1 -->
                                 <div class="col-3">
                                     <div class="card border-0">
-                                        <div class="circle-outer">
+                                        <div class="circle-outer p-2">
                                             <div class="circle">
                                                 <img class="img2" src="assets/images/categories/heat&vent-1.png"
                                                     alt="heat&vent-1">
@@ -1889,11 +1870,11 @@
                                 <!-- cat 1 -->
                                 <div class="col-3">
                                     <div class="card border-0">
-                                        <div class="circle-outer">
+                                        <div class="circle-outer p-2">
                                             <div class="circle">
-                                                <img class="img1" src="assets/images/categories/fire&security-2.png"
+                                                <img class="img2" src="assets/images/categories/fire&security-2.png"
                                                     alt="fire&security-2">
-                                                <img class="img2" src="assets/images/categories/fire&security-1.png"
+                                                <img class="img1" src="assets/images/categories/fire&security-1.png"
                                                     alt="fire&security-1">
                                             </div>
                                         </div>
@@ -1909,12 +1890,12 @@
                                 <!-- cat 1 -->
                                 <div class="col-3">
                                     <div class="card border-0">
-                                        <div class="circle-outer">
+                                        <div class="circle-outer p-2">
                                             <div class="circle">
-                                                <img class="img2" src="assets/images/categories/circuit-2.png"
+                                                <img class="img1" src="assets/images/categories/circuit-2.png"
+                                                alt="circuit-1">
+                                                <img class="img2" src="assets/images/categories/circuit-1.png"
                                                     alt="circuit-2">
-                                                <img class="img1" src="assets/images/categories/circuit-1.png"
-                                                    alt="circuit-1">
                                             </div>
                                         </div>
                                         <div class="category-title">
@@ -1925,7 +1906,7 @@
                                 <!-- cat 1 -->
                                 <div class="col-3">
                                     <div class="card border-0">
-                                        <div class="circle-outer">
+                                        <div class="circle-outer p-2">
                                             <div class="circle">
                                                 <img class="img1" src="assets/images/categories/smart-1.png"
                                                     alt="smart-1">
@@ -1941,16 +1922,16 @@
                                 <!-- cat 1 -->
                                 <div class="col-3">
                                     <div class="card border-0">
-                                        <div class="circle-outer">
+                                        <div class="circle-outer p-2">
                                             <div class="circle">
-                                                <img class="img1" src="assets/images/categories/tools-2.png"
+                                                <img class="img1" style="height: 45px; width: 45px;" src="assets/images/categories/tools-1.png"
                                                     alt="tools-2">
-                                                <img class="img2" src="assets/images/categories/tools-1.png"
+                                                <img class="img2" style="height:35px;width: 35px;" src="assets/images/categories/tools-2.png"
                                                     alt="tools-1">
                                             </div>
                                         </div>
                                         <div class="category-title">
-                                            <h5 class="text-center">Tools</h5>
+                                            <h5 class="text-center">Tools & Hardware</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -2786,7 +2767,7 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <!-- brand 1 -->
-                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                <div class="col-md-4 col-sm-4 col-lg-4 px-3">
                                     <div class="card p-1">
                                         <div class="card-body">
                                             <div class="row">
@@ -2814,7 +2795,7 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <!-- brand 2 -->
-                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                <div class="col-md-4 col-sm-4 col-lg-4 px-3">
                                     <div class="card p-1">
                                         <div class="card-body">
                                             <div class="row">
@@ -2842,7 +2823,7 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <!-- brand 3 -->
-                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                <div class="col-md-4 col-sm-4 col-lg-4 px-3">
                                     <div class="card p-1">
                                         <div class="card-body">
                                             <div class="row">
@@ -3505,7 +3486,7 @@
                                     <div class="col col1">
                                         <div class="img-card">
                                             <div class="img-div">
-                                                <img src="assets/images/avatar.png" alt="review" class="img-fluid">
+                                                <img src="assets/images/avatar.png" alt="review">
                                             </div>
                                             <div class="name text-center">
                                                 <h5>Williamson</h5>
